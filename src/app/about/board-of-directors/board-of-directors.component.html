@@ -1,0 +1,37 @@
+<app-header></app-header>
+<app-sub-header [subNavArr]="dataSrc[0].children" [subNavArr2]='dataSrc[0]'>
+</app-sub-header>
+<div class="page-banner overlay video"> <video muted loop playsinline autoplay id="bod_bg" poster=""> <source src="./assets/management-assets/01_hero/Blue_swirl_1.mp4" type="video/mp4"> </video>
+    <div class="container">
+        <div class="vertical-align">
+            <div class="wrapper text">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h2 class='bounceInUp' style="animation-name: bounceInUp; ">Board of Directors</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="innerWrapper">
+    <div class="headshotGrid">
+        <div class="headshotColumn" *ngFor="let item of teamdata">
+            <div class="headshotItem">
+                <div class="headshotImage"><img src={{item.headshot}} alt="{{item.fullName}}">
+                    <div class="clearfix"></div>
+                    <div class="headshotOverlay">
+                        <p>{{item.miniBio}} <span class="read_more" style="cursor: pointer; " [routerLink]="['/biodetail',item.firstName]">Read More </span> </p>
+                    </div>
+                </div>
+                <div style="padding-left: 8px">
+                    <h3>{{item.fullName}}</h3> <span>{{item.position}}</span> </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

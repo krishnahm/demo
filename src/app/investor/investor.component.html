@@ -1,0 +1,78 @@
+<app-header></app-header>
+<app-sub-header [subNavArr]="dataSrc[4].children" [subNavArr2]='dataSrc[4]'></app-sub-header>
+
+<div class="page-banner overlay video" id="investor_bg" data-vide-bg="{&quot;mp4&quot;: &quot;./assets/ir-overview-assets/WhatisPolarityTE_LITE2.mp4&quot;}" data-vide-options="loop: true, muted: true, playbackRate: 0.5, autoplay: true, position: 0% 0%;posterType: 'jpg'">
+    <div class="vertical-align">
+        <div class="wrapper text">
+            <div class="row">
+                <div class="text" style="flex: auto;">
+                    <h2 style="font-weight: 300">What is</h2>
+                    <h2 style="font-weight: bold">PolarityTE?</h2>
+
+                    <div class="under_line" style="background: #ffffff;"></div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-sm-offset-4  col-md-offset-4">
+                    <p>PolarityTE is a commercial-stage biotechnology and regenerative biomaterials company focused on transforming the lives of patients by discovering, designing and developing a range of regenerative tissue products and biomaterials for
+                        the fields of medicine, biomedical engineering and material sciences. The PolarityTE platform technology begins with a small piece of the patient's own, or autologous, healthy tissue, rather than artificially manipulated individual
+                        cells. From this small piece of healthy autologous tissue, the company creates an easily deployable, dynamic and self-propagating product designed to enhance and stimulate the patient's own cells to regenerate the target tissues.
+                        Rather than manufacturing with synthetic and foreign materials within artificially engineered environments, PolarityTE manufactures with the patient's own tissue and uses the patient's own body to support the regenerative process
+                        to create the same tissue from which it was derived. PolarityTE's innovative method is intended to promote and accelerate growth of the patient's tissues to undergo a form of effective regenerative healing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="investor_img_bg" class="page-banner" style=" background: url(./assets/ir-overview-assets/WhatIsPolarity.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;">
+    <div class="vertical-align">
+        <div class="wrapper">
+            <div class="row">
+                <div class="text" style="flex:auto;">
+                    <h2 style="font-weight: 300">What is</h2>
+                    <h2 style="font-weight: bold">PolarityTE?</h2>
+
+                    <div class="under_line" style="background: #ffffff;"></div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-sm-offset-4  col-md-offset-4">
+                    <p>PolarityTE is a commercial-stage biotechnology and regenerative biomaterials company focused on transforming the lives of patients by discovering, designing and developing a range of regenerative tissue products and biomaterials for
+                        the fields of medicine, biomedical engineering and material sciences. The PolarityTE platform technology begins with a small piece of the patient's own, or autologous, healthy tissue, rather than artificially manipulated individual
+                        cells. From this small piece of healthy autologous tissue, the company creates an easily deployable, dynamic and self-propagating product designed to enhance and stimulate the patient's own cells to regenerate the target tissues.
+                        Rather than manufacturing with synthetic and foreign materials within artificially engineered environments, PolarityTE manufactures with the patient's own tissue and uses the patient's own body to support the regenerative process
+                        to create the same tissue from which it was derived. PolarityTE's innovative method is intended to promote and accelerate growth of the patient's tissues to undergo a form of effective regenerative healing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ir-landing-page">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+            <h3>Latest Press Releases</h3>
+            <div id="LibDivPress"></div>
+            <span class="view_more"><a style="padding-right:15px;"routerLink="/news-media/press-releases">View more</a></span> <b>|</b>
+            <span class='nav_email'><a style="padding-left:15px;" routerLink="/email-alerts">Sign-up for email alerts</a></span>
+            <div class="Quotestart">
+                <h3>Stock Quote</h3>
+                <div id="QuoteDiv"></div>
+            </div>
+
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="upcomng_evnts">
+                <h3>Upcoming Events</h3>
+                <div id="CalDiv"></div>
+                <span class="view_more"><a style="padding-right:15px;"routerLink="/news-media/events">View more</a></span> <b>|</b>
+                <span class='nav_email'><a style="padding-left:15px;" routerLink="/email-alerts">Sign-up for email alerts</a></span>
+            </div>
+            <div class="stock_chart">
+                <h3>Stock Chart</h3>
+                <div id="chartdiv" style="height:700px;"></div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<app-footer></app-footer>

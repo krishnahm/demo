@@ -1,0 +1,178 @@
+.stick {
+    position: fixed;
+    top: 0
+}
+
+a {
+    text-decoration: none
+}
+
+@media screen and (min-width:992px) {
+    .page-banner1 .text,
+    .page-banner2 .text,
+    .page-banner3.text {
+        margin: 0 75px
+    }
+}
+
+#partners_bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover
+}
+
+.page-banner video {
+    display: block
+}
+
+#about-page-banner,
+.page-banner.overlay.video,
+.page-banner2,
+.page-banner3 {
+    border-bottom: 33px solid #000
+}
+
+.page-banner,
+.page-banner .vertical-align {
+    height: 400px
+}
+
+.page-banner2 .vertical-align,
+.page-banner3 .vertical-align {
+    height: 650px
+}
+
+.page-banner,
+.page-banner2,
+.page-banner3 {
+    position: relative;
+    overflow: hidden;
+    z-index: 0
+}
+
+.page-banner .vertical-align,
+.page-banner2 .vertical-align,
+.page-banner3 .vertical-align,
+.vertical-align {
+    position: relative;
+    z-index: 2
+}
+
+.vertical-align {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    height: 400px
+}
+
+.page-banner .text {
+    text-align: center
+}
+
+.vertical-align>.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%
+}
+
+.page-banner h2,
+.page-banner2 h2,
+p {
+    color: #fff
+}
+
+.page-banner3 h2,
+.page-banner3 p {
+    color: #000;
+    text-align: left
+}
+
+#PolarityRD h2,
+#PolarityRD p,
+.page-banner3:last-of-type h2,
+.page-banner3:last-of-type p {
+    color: #fff
+}
+
+#PolarityRD .vertical-align {
+    background-color: rgba(0, 0, 0, .4)
+}
+
+.page-banner h2,
+.page-banner2 h2,
+.page-banner3 h2 {
+    font-size: 50px
+}
+
+h2,
+h2 a {
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: none
+}
+
+h2 {
+    margin: 0 0 20px
+}
+
+.page-banner2 .text {
+    max-width: 660px;
+    margin: 0 auto
+}
+
+.page-banner2 .text h2 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .6)
+}
+
+.page-banner3 .text {
+    max-width: 660px;
+    margin: 0 auto
+}
+
+.page-banner3 .text h2 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 5px
+}
+
+@media screen and (max-width:767px) {
+    .page-banner {
+        background: url(../../assets/partners-assets/partner_heroGrid.jpg) 50% 50% no-repeat;
+        background-size: cover
+    }
+    #partners_bg {
+        display: none
+    }
+}
+
+@media screen and (max-width:991px) {
+    .text h2 {
+        vertical-align: middle
+    }
+    .page-banner3 .text h2,
+    .page-banner3 .text p,
+    .text p {
+        text-align: left
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .page-banner,
+    .page-banner .vertical-align {
+        height: 200px
+    }
+    .vertical-align {
+        height: auto!important
+    }
+    .page-banner .text,
+    .text {
+        padding: 30px 15px
+    }
+    .bounceInUp {
+        margin: 20px
+    }
+}

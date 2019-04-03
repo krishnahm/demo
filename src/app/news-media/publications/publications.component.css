@@ -1,0 +1,197 @@
+.active-link {
+    color: #49A0DF
+}
+
+.stick {
+    position: fixed;
+    top: 0
+}
+
+.active-link::after,
+.active-link:active::after,
+.active-link:focus::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+    max-width: 80%;
+    height: 3px;
+    background: #017eda;
+    width: 100%
+}
+
+#page-banner .vertical-align {
+    height: 400px;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#page-banner {
+    border-bottom: 33px solid #000;
+    position: relative;
+    overflow: hidden;
+    z-index: 0
+}
+
+#page-banner .text {
+    text-align: center;
+    padding: 32px 0
+}
+
+.vertical-align>.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%
+}
+
+.vertical-align {
+    display: table;
+    width: 100%;
+    table-layout: fixed
+}
+
+p {
+    font-size: 16px;
+    color: #fff
+}
+
+#page-banner h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 50px
+}
+
+h2,
+h2 a {
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: none
+}
+
+@media screen and (max-width:1199px) {
+    #page-banner .vertical-align {
+        height: 200px
+    }
+}
+
+.heading h2 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.under_line {
+    height: 1px;
+    background-color: #fff;
+    width: 100%;
+    margin: 15px 0
+}
+
+h3 {
+    font-size: 30px;
+    color: #fff;
+}
+
+#in-the-news-mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+}
+
+.media .media-left {
+    width: 200px;
+}
+
+.list-description {
+    color: #fff;
+    display: inline-block;
+    padding-left: 0px;
+}
+
+.media-left img {
+    width: 200px;
+}
+
+.media-heading a {
+    color: #49A0DF;
+    font-size: 20px;
+}
+
+.media-heading span {
+    color: #fff;
+}
+
+.media-heading {
+    margin: 5px 0;
+}
+
+.media+.media {
+    margin-top: 15px;
+    padding-top: 15px
+}
+
+article,
+main {
+    display: block;
+}
+
+time {
+    color: #fff;
+    font-size: 20px;
+}
+
+.article-link {
+    margin: 5px 0;
+    text-indent: 30px;
+}
+
+.article-link a {
+    font-size: 16px;
+}
+
+.article-link a {
+    color: #49A0DF;
+}
+
+.article-link a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.article-link img {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.award-winning-sign {
+    margin: 45px 0;
+    color: #fff;
+}
+
+.award-winning-sign img {
+    height: 15px;
+    width: 15px;
+}
+
+.location-city {
+    font-style: italic;
+}
+
+.poster_podium {
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+@media screen and (max-width:480px) {
+    .media-body {
+        display: block;
+        margin-top: 25px;
+        padding-left: 0;
+    }
+}

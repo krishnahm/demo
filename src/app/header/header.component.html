@@ -1,0 +1,152 @@
+<header class="zero-nav header-small">
+    <div class="main">
+        <h1 class="logo">
+            <a href="/"> <img src="./assets/home-assests/pte_logo/pte_webLogo_bcsmoother.jpg" width="100" height="30" alt="PolarityTE&reg;, Inc."> </a>
+        </h1>
+        <div class="navbar-header">
+            <a class="mobile-nav-trigger" [ngClass]="{ 'in': isIn }" (click)="toggleState()">
+                <div class="icon-bar"></div>
+                <div class="icon-bar"></div>
+                <div class="icon-bar"></div>
+            </a>
+        </div>
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" [ngClass]="{ 'in': isIn }">
+            <ul class="main-nav navbar-nav">
+                <li class="dropdown has-children">
+                    <a style="color: #ffffff;" dropdown-toggle='' data-toggle='dropdown' aria-expanded="false">About </a>
+
+                    <ul id='submenu_sub' class="dropdown-menu dropdown-menu-center" (click)="toggleState()" [ngClass]="{ 'in': isIn }">
+                        <li><a routerLink="/about/overview">Overview</a></li>
+                        <li><a routerLink="/about/management-team">Management Team</a></li>
+                        <li><a routerLink="/about/board-of-directors">Board of Directors</a></li>
+                        <li><a routerLink="/about/clinical-board-of-advisors">Clinical Board of Advisors</a></li>
+
+                        <li><a style="border:none" routerLink="/about/values">Values</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown has-children">
+                    <a style="color: #ffffff;" dropdown-toggle='' data-toggle='dropdown' aria-expanded="false">News & Media </a>
+                    <ul id='submenu_sub' class="dropdown-menu dropdown-menu-center" (click)="toggleState()" [ngClass]="{ 'in': isIn }">
+                        <li><a routerLink="/news-media/in-the-news">In the News</a></li>
+                        <li><a routerLink="/news-media/press-releases">Press Releases</a></li>
+                        <li><a routerLink="/news-media/events">Events</a></li>
+                        <li><a style="border:none" routerLink="/news-media/scientific-communications">Scientific Communications</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown has-children">
+                    <a style="color: #ffffff;" dropdown-toggle='' data-toggle='dropdown' aria-expanded="false">Platform</a>
+                    <ul id='submenu_sub' class="dropdown-menu dropdown-menu-center" (click)="toggleState()" [ngClass]="{ 'in': isIn }">
+                        <li><a routerLink="/platform" pageScroll [pageScrollSpeed]="3000" href='#whatisPolarity'>What is Polarity?</a></li>
+                        <li><a routerLink="/platform" pageScroll [pageScrollSpeed]="3000" href='#polarityteplatform'>PolarityTE Platform</a></li>
+
+                        <li><a style='border:none' routerLink="/platform" pageScroll [pageScrollSpeed]="3000" href='#how_it_works'>How It Works</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a style="color: #ffffff;" dropdown-toggle='' data-toggle='dropdown' aria-expanded="false">Products </a>
+
+                    <ul (click)="toggleState()" id='submenu_sub' class="dropdown-menu dropdown-menu-center">
+                        <li><a routerLink="/products/overview">Overview</a></li>
+                        <li><a routerLink="/products/skinTE-patients">SkinTE for Patients</a></li>
+                        <li><a routerLink="/products/skinTE-providers">SkinTE for Providers</a></li>
+                        <li><a routerLink="/products/osteoTE">OsteoTE</a></li>
+                        <li><a style="border:none" routerLink="/products/rta">RTA</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown has-children">
+                    <a style="color: #ffffff;" dropdown-toggle='' data-toggle='dropdown' aria-expanded="false">Partners</a>
+                    <ul id='submenu_sub' class="dropdown-menu dropdown-menu-center" (click)="toggleState()" [ngClass]="{ 'in': isIn }">
+                        <li><a routerLink="/partners" pageScroll [pageScrollSpeed]="3000" href='#PolarityIS'>PolarityIS</a></li>
+                        <li><a routerLink="/partners" pageScroll [pageScrollSpeed]="3000" href='#PolarityRD'>PolarityRD </a></li>
+                        <li><a routerLink="/partners" pageScroll [pageScrollSpeed]="3000" href='#PolarityED'>PolarityED </a></li>
+                        <li><a routerLink="/partners" pageScroll [pageScrollSpeed]="3000" href='#PolarityIT'>PolarityIT </a></li>
+                        <li><a style='border:none' routerLink="/partners" pageScroll [pageScrollSpeed]="3000" href='#PolarityRX'>PolarityRX</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a style="color: #ffffff;" dropdown-toggle='' data-toggle='dropdown' aria-expanded="false">Investor Relations</a>
+
+                    <ul (click)="toggleState()" id='submenu_sub' class="dropdown-menu dropdown-menu-center">
+                        <li><a routerLink="/investor/overview">Overview</a></li>
+                        <li><a routerLink="/investor/company-info">Company Info</a></li>
+                        <li><a routerLink="/investor/financial-info">Financial Info</a></li>
+                        <li><a routerLink="/investor/sec-filings">SEC Filings</a></li>
+                        <li><a routerLink="/investor/stock-data">Stock Data</a></li>
+                        <li><a routerLink="/investor/governance">Governance</a></li>
+                        <li><a style="border:none" routerLink="/contact">Contact</a></li>
+                    </ul>
+                </li>
+                <li id="menu" class="nav-menu" [ngClass]="{ 'in2': isIn2}" (click)="toggleState2()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container"></div>
+    <div id='nav-expanded' [@slideInOut]="menuState2" class="nav-flyout" [ngClass]="{ 'in2': isIn2 }" style="height: auto;">
+        <div id='nav-expanded-menu' class="container" [ngClass]="{ 'in2': isIn2 }">
+            <div class="nav-flyout__menu-item nav-flyout__menu-item--us" (click)="toggleState2()"><a class="nav-flyout__section-title" href="">PolarityTE</a>
+                <ul class="nav-flyout__submenu">
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/about/overview">About</a></li>
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/platform">Platform</a></li>
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/products/overview">Products</a></li>
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/partners">Partners</a></li>
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/investor/overview">Investor Relations</a></li>
+                </ul>
+            </div>
+            <div class="nav-flyout__menu-item nav-flyout__menu-item--us" (click)="toggleState2()"><a class="nav-flyout__section-title" routerLink="/about/overview">About</a>
+                <ul class="nav-flyout__submenu">
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/about/management-team">Management Team</a></li>
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/about/board-of-directors">Board of Directors</a></li>
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/about/clinical-board-of-advisors">Clinical Board of Directors</a></li>
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/about/values">Our Values</a></li>
+                </ul>
+            </div>
+            <div class="nav-flyout__menu-item nav-flyout__menu-item--us" (click)="toggleState2()"><a class="nav-flyout__section-title" routerLink="/news-media/in-the-news">News &amp; Media</a>
+                <ul class="nav-flyout__submenu" style="float: none;">
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/news-media/in-the-news">In The News</a></li>
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/news-media/press-releases">Press Releases</a></li>
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/news-media/events">Events</a></li>
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/news-media/scientific-communications">Scientific Comm.</a></li>
+
+                </ul>
+            </div>
+            <div class="nav-flyout__menu-item nav-flyout__menu-item--us" (click)="toggleState2()">
+                <a class="nav-flyout__section-title" routerLink="/investor/overview">Investors</a>
+                <ul class="nav-flyout__submenu">
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/investor/company-info">Company Informations</a></li>
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/investor/financial-info">Financial Informations</a></li>
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/investor/stock-data">Stock Data </a></li>
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/investor/sec-filings">SEC Filings</a></li>
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/investor/governance">Governance</a></li>
+
+                </ul>
+            </div>
+            <div class="nav-flyout__menu-item nav-flyout__menu-item--us" (click)="toggleState2()"><a class="nav-flyout__section-title" routerLink="/contact">Contact</a>
+                <ul class="nav-flyout__submenu">
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/contact" pageScroll [pageScrollSpeed]="3000" href='#row-contact-forms' (click)="goToContact('feedback')">Feedback</a></li>
+
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/contact" pageScroll [pageScrollSpeed]="3000" href='#row-contact-forms' (click)="goToContact('collaborate')">Collaborate</a></li>
+
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/contact" pageScroll [pageScrollSpeed]="3000" href='#row-contact-forms' (click)="goToContact('investor')">Investor</a></li>
+
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/contact" pageScroll [pageScrollSpeed]="3000" href='#row-contact-forms' (click)="goToContact('contact')">Contact HR</a></li>
+
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" href="https://secure.ethicspoint.com/domain/media/en/gui/54731/index.html" target="_blank">Report a Concern</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-flyout__menu-item nav-flyout__menu-item--us" (click)="toggleState2()"><a class="nav-flyout__section-title" href="/careers">Careers</a>
+                <ul class="nav-flyout__submenu">
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" href="/careers">Careers</a></li>
+                    <li class="nav-flyout__submenu-item"><a class="nav-flyout__submenu-link" routerLink="/contact">Contact HR</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

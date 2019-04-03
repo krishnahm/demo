@@ -1,0 +1,177 @@
+#about-page-banner,
+.page-banner.overlay.video,
+.page-banner2,
+.page-banner3 {
+    border-bottom: 33px solid #000
+}
+
+.page-banner.overlay .vertical-align {
+    background-color: rgba(0, 0, 0, .4)
+}
+
+#about_bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover
+}
+
+.page-banner .vertical-align,
+.page-banner2 .vertical-align,
+.page-banner3 .vertical-align {
+    height: 650px
+}
+
+#about-page-banner,
+.page-banner,
+.page-banner2,
+.page-banner3 {
+    position: relative;
+    overflow: hidden;
+    z-index: 0
+}
+
+#about-page-banner,
+.page-banner .vertical-align,
+.page-banner2 .vertical-align,
+.page-banner3 .vertical-align,
+.vertical-align {
+    position: relative;
+    z-index: 2
+}
+
+.vertical-align {
+    display: table;
+    width: 100%;
+    table-layout: fixed
+}
+
+.page-banner .text {
+    width: 100%;
+    max-width: 770px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 99!important
+}
+
+h2,
+p {
+    margin: 0 0 20px
+}
+
+#about-page-banner h2 {
+    text-align: center
+}
+
+.vertical-align>.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%
+}
+
+#about-page-banner h2,
+.page-banner2:not(.home-hero) h2,
+.page-banner:not(.home-hero) h2,
+p {
+    color: #fff
+}
+
+.page-banner3:not(.home-hero) h2,
+p {
+    color: #fff;
+    text-align: left
+}
+
+p {
+    font-size: 16px
+}
+
+#about-page-banner h2,
+.page-banner h2,
+.page-banner2 h2,
+.page-banner3 h2 {
+    font-size: 50px
+}
+
+h2,
+h2 a {
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: none
+}
+
+#about-page-banner,
+#about-page-banner .vertical-align {
+    height: 400px
+}
+
+.page-banner2 .text,
+.page-banner3 .text {
+    text-align: left;
+    max-width: 660px;
+    margin: 0 auto
+}
+
+.page-banner2 .text h2,
+.page-banner3 .text h2 {
+    font-size: 45px;
+    margin-bottom: 5px!important;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .6)
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+    text-decoration: none
+}
+
+.btn {
+    min-width: 196px;
+    color: #fff;
+    border: 2px solid #fff;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 1000px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+    cursor: pointer
+}
+
+@media screen and (max-width:767px) {
+    .page-banner {
+        background: url(../../assets/about_Overview-assets/About-Where-Self-Regenerates.jpg) 50% 50% no-repeat;
+        background-size: cover;
+        height: auto
+    }
+    #about_bg {
+        display: none
+    }
+}
+
+@media screen and (max-width:991px) {
+    .page-banner2 {
+        background-attachment: scroll!important
+    }
+}
+
+@media screen and (max-width:1199px) {
+    #about-page-banner,
+    #about-page-banner .vertical-align {
+        height: 200px
+    }
+    .vertical-align {
+        height: auto!important
+    }
+    .page-banner .text,
+    .text {
+        padding: 30px 15px
+    }
+    .bounceInUp {
+        margin: 20px
+    }
+}

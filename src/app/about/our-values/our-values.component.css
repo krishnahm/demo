@@ -1,0 +1,139 @@
+#values-page-banner,
+.page-banner,
+.page-banner2,
+.page-banner3 {
+    border-bottom: 33px solid #000;
+    overflow: hidden;
+    z-index: 0
+}
+
+.page-banner .vertical-align,
+.page-banner2 .vertical-align,
+.page-banner3 .vertical-align {
+    height: 650px
+}
+
+#values-page-banner,
+.page-banner .vertical-align,
+.page-banner2 .vertical-align,
+.page-banner3 .vertical-align,
+.vertical-align {
+    z-index: 2
+}
+
+.vertical-align {
+    display: table;
+    width: 100%;
+    table-layout: fixed
+}
+
+.page-banner .text {
+    width: 100%;
+    max-width: 770px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 99!important
+}
+
+#values-page-banner h2,
+.page-banner .text {
+    text-align: center
+}
+
+.vertical-align>.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%
+}
+
+#values-page-banner h2,
+.page-banner2:not(.home-hero) h2,
+.page-banner:not(.home-hero) h2,
+p {
+    color: #fff
+}
+
+.page-banner3:not(.home-hero) h2,
+p {
+    color: #fff;
+    text-align: left
+}
+
+#values-page-banner h2,
+.page-banner h2,
+.page-banner2 h2,
+.page-banner3 h2 {
+    font-size: 50px;
+    margin-bottom: 5px
+}
+
+h2,
+h2 a {
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: none
+}
+
+.page-banner2 .text h2,
+.page-banner3 .text h2 {
+    font-size: 45px;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .6)
+}
+
+h2 {
+    margin: 0 0 20px
+}
+
+#values-page-banner,
+#values-page-banner .vertical-align {
+    height: 400px
+}
+
+.page-banner2 .text {
+    text-align: left;
+    max-width: 660px;
+    margin: 0 auto
+}
+
+.page-banner2 .text h2 {
+    margin-bottom: 5px
+}
+
+.page-banner3 .text {
+    max-width: 660px;
+    margin: 0 auto
+}
+
+.page-banner3 .text h2 {
+    margin-bottom: 5px
+}
+
+@media screen and (max-width:1199px) {
+    #values-page-banner,
+    #values-page-banner .vertical-align {
+        height: 200px
+    }
+    .vertical-align {
+        height: auto!important
+    }
+    .page-banner .text,
+    .text {
+        padding: 30px 15px
+    }
+    .bounceInUp {
+        margin: 20px
+    }
+}
+
+@media screen and (max-width:991px) {
+    .page-banner3 .text h2,
+    .page-banner3 .text p,
+    .text h2,
+    .text p {
+        text-align: left
+    }
+    .page-banner2 {
+        background-attachment: scroll!important
+    }
+}

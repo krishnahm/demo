@@ -1,0 +1,148 @@
+<app-header></app-header>
+<div sticky class="sub-navigation ">
+
+    <nav class="collapse sb-nav clearfix" id="sub-navigation">
+        <h3 class="hidden-sm hidden-xs"> <a routerLink="/contact">Contact</a> </h3>
+        <ul>
+            <li> <a pageScroll [pageScrollSpeed]="3000" href='#location'>Location</a> </li>
+            <li [ngClass]='classfeedback' (click)="getvalue('feedback')"><a pageScroll [pageScrollSpeed]="3000" href='#row-contact-forms'>Feedback</a> </li>
+            <li [ngClass]='classcollaborate' (click)="getvalue('collaborate')"><a pageScroll [pageScrollSpeed]="3000" href='#row-contact-forms'>Collaborate</a></li>
+            <li [ngClass]='classinvestor' (click)="getvalue('investor')"><a pageScroll [pageScrollSpeed]="3000" href='#row-contact-forms'>Investor</a></li>
+            <li [ngClass]='classcontactHR' (click)="getvalue('contact')"> <a pageScroll [pageScrollSpeed]="3000" href='#row-contact-forms' class="contact">Contact HR</a> </li>
+            <li> <a href="https://secure.ethicspoint.com/domain/media/en/gui/54731/index.html" target="_blank">Report a Concern</a> </li>
+        </ul>
+    </nav>
+
+</div>
+<div class="page-banner overlay video">
+    <div class="vertical-align"> <video muted autoplay playsinline id="contact_bg"> <source src="./assets/contact-assets/Contact_small.mp4" type="video/mp4"> </video> <img src="./assets/contact-assets/Contact_mobile.jpg" id='contact_img_bg' alt='Contact'>
+        <div class="wrapper text">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="bounceInUp">Contact </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="building-map" data-anchor-title="Location" id="location" style="background: url(./assets/contact-assets/pteExterior.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;border-top:5px solid #5fbe67 "></div>
+<div class="contact-location-card">
+    <div class="vertical-align">
+        <div class="wrapper text">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 offset-xl-3 text-center">
+                    <div class="text"> <span class="address"> <b>Headquarters:</b><br>123 North Wright Brothers Drive,<br>Salt Lake City, UT 84116</span>
+
+                        <span class="central address"> <b>Central Campus:</b><br>1960 South 4250 West,<br>Salt Lake City, UT 84104</span>
+                        <span class="contact-details"><b>Corporate Main:</b>&nbsp; <a href="tel:800-560-3983">800-560-3983</a><br><b>Investor Relations:</b>&nbsp; <a href="tel:385-831-5284">385-831-5284</a> <br><b>Public Relations:</b>&nbsp; <a href="tel:858-717-2310">858-717-2310</a> </span>                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="module-contact-forms dark row" id="row-contact-forms">
+    <aside class="form-tabs col-sm-12 col-md-4 col-lg-3">
+        <h3>What would you like to do?</h3>
+        <ul class="nav1">
+            <li class="feedback_tab" [ngClass]='classfeedback' (click)="getvalue('feedback')">
+                <a class="feedback"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"> <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z"></path> </svg>                    <span>Give Feedback/<br>Ask Questions</span> </a>
+            </li>
+            <li class="collaborate_tab" [ngClass]='classcollaborate' (click)="getvalue('collaborate')">
+                <a class="collaborate"> <svg viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg"> <path d="M657 896q-162 5-265 128h-134q-82 0-138-40.5t-56-118.5q0-353 124-353 6 0 43.5 21t97.5 42.5 119 21.5q67 0 133-23-5 37-5 66 0 139 81 256zm1071 637q0 120-73 189.5t-194 69.5h-874q-121 0-194-69.5t-73-189.5q0-53 3.5-103.5t14-109 26.5-108.5 43-97.5 62-81 85.5-53.5 111.5-20q10 0 43 21.5t73 48 107 48 135 21.5 135-21.5 107-48 73-48 43-21.5q61 0 111.5 20t85.5 53.5 62 81 43 97.5 26.5 108.5 14 109 3.5 103.5zm-1024-1277q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm704 384q0 159-112.5 271.5t-271.5 112.5-271.5-112.5-112.5-271.5 112.5-271.5 271.5-112.5 271.5 112.5 112.5 271.5zm576 225q0 78-56 118.5t-138 40.5h-134q-103-123-265-128 81-117 81-256 0-29-5-66 66 23 133 23 59 0 119-21.5t97.5-42.5 43.5-21q124 0 124 353zm-128-609q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181z"></path> </svg>                    <span>Collaborate with Us</span> </a>
+            </li>
+            <li class="investor_tab" [ngClass]='classinvestor' (click)="getvalue('investor')">
+                <a class="investor"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"> <path d="M768 890l546 546q-106 108-247.5 168t-298.5 60q-209 0-385.5-103t-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103v762zm187 6h773q0 157-60 298.5t-168 247.5zm709-128h-768v-768q209 0 385.5 103t279.5 279.5 103 385.5z"></path> </svg>                    <span>Become an Investor</span> </a>
+            </li>
+            <li class="contactHR_tab" (click)="getvalue('contact')" [ngClass]='classcontactHR'>
+                <a class="contact"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"> <path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"></path> </svg>                    <span>Contact HR</span> </a>
+            </li>
+        </ul>
+    </aside>
+    <div class="contact-forms tab-content col-sm-12 col-md-8 col-lg-9">
+        <div class="tab-pane feedback_tab" [ngClass]='classfeedback' data-anchor-title="Feedback" id="feedback">
+            <h2 style="display:block;"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"> <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z"></path> </svg>                Give Feedback/Ask Questions </h2>
+            <h3>PolarityTE wants to hear from you.</h3>
+            <p>Share your question and feedback here and a member of our team will point you in the right direction. Let us know what you are curious about or what you want to see for the future of regenerative medicine. </p>
+            <form ngNoForm action="https://www.b2i.us/profiles/investor/FormHandler.asp" target="_self" method="POST"> <input type="hidden" name="BzID" value="2361" /> <input type="hidden" name="FormKey" value="18f4e9Z9F5K6U6J" />
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 ">
+                        <div class="form-group"><label for="first_name_f">First Name&nbsp;<span aria-required="true" class="required">(required)</span></label><input required class=" form-control s" id="first_name_f" maxlength="40" minlength="2" name="firstname" type="text"
+                                value=""></div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 ">
+                        <div class="form-group"><label for="last_name_f">Last Name&nbsp;<span aria-required="true" class="required">(required)</span></label><input required class=" form-control lettersonly" id="last_name_f" maxlength="40" minlength="2" name="lastname" type="text"
+                                value=""></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-12 col-md-6"><label for="email_f">Email&nbsp;<span aria-required="true" class="required">(required)</span> </label><input required class=" form-control" id="email_f" name="email" type="email" value=""></div>
+                </div>
+                <div class="form-group"><label for="message_f">Message&nbsp;<span aria-required="true" class="required">(required)</span> </label><textarea aria-required="true" class=" form-control" cols="30" id="message_f" name="comments" rows="6"></textarea></div>
+                <div cols="30" class="form-group submit-group col-sm-12 col-md-12 "> I am not a robot, to verify please answer 8+7 is equal to <input required name="Challenge" type="text" value="" class="form-control" /> </div><br>
+                <div class="submit-group"> <button class="btn " type="submit">Submit</button>
+                    <p class="privacy-note">We respect your privacy. We do not sell, rent, or loan any information to any third party. Any information you give us is held with the utmost care and security, and will be used only in ways to which you have consented.</p>
+                </div>
+            </form>
+        </div>
+        <div class="tab-pane collaborate_tab" [ngClass]='classcollaborate' data-anchor-title="collaborate" id="collaborate">
+            <h2> <svg viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg"> <path d="M657 896q-162 5-265 128h-134q-82 0-138-40.5t-56-118.5q0-353 124-353 6 0 43.5 21t97.5 42.5 119 21.5q67 0 133-23-5 37-5 66 0 139 81 256zm1071 637q0 120-73 189.5t-194 69.5h-874q-121 0-194-69.5t-73-189.5q0-53 3.5-103.5t14-109 26.5-108.5 43-97.5 62-81 85.5-53.5 111.5-20q10 0 43 21.5t73 48 107 48 135 21.5 135-21.5 107-48 73-48 43-21.5q61 0 111.5 20t85.5 53.5 62 81 43 97.5 26.5 108.5 14 109 3.5 103.5zm-1024-1277q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm704 384q0 159-112.5 271.5t-271.5 112.5-271.5-112.5-112.5-271.5 112.5-271.5 271.5-112.5 271.5 112.5 112.5 271.5zm576 225q0 78-56 118.5t-138 40.5h-134q-103-123-265-128 81-117 81-256 0-29-5-66 66 23 133 23 59 0 119-21.5t97.5-42.5 43.5-21q124 0 124 353zm-128-609q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181z"></path> </svg>                Collaborate with us</h2>
+            <h3>PolarityTE Subchannels can make your vision reality.</h3>
+            <p>Through our various subchannels we can help you overcome any obstacle impeding your imagination from becoming an innovation. Test your therapeutics on our functional tissue. Combine our innovative technology with your products to create a
+                strategic partnership. Let us push your academic research through obstacles. Let's make something groundbreaking together.</p>
+            <form ngNoForm action="https://www.b2i.us/profiles/investor/FormHandler.asp" method="post"> <input type="hidden" name="BzID" value="2361" /> <input type="hidden" name="FormKey" value="19B8D7h3U7h9V7M" />
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 ">
+                        <div class="form-group"><label for="first_name_f">First Name&nbsp;<span aria-required="true" class="required">(required)</span></label><input required aria-required="true" class="required form-control s" id="first_name_f" maxlength="40" minlength="2"
+                                name="firstname" type="text" value="" /></div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 ">
+                        <div class="form-group"><label for="last_name_f">Last Name&nbsp;<span aria-required="true" class="required">(required)</span></label><input required aria-required="true" class="required form-control lettersonly" id="last_name_f" maxlength="40" minlength="2"
+                                name="lastname" type="text" value="" /></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-12 col-md-6"><label for="email_f">Email&nbsp;<span aria-required="true" class="required">(required)</span></label><input required aria-required="true" class="required form-control" id="email_f" name="email" type="email" value="" /></div>
+                </div>
+                <div class="form-group"><label for="message_f">Message&nbsp;<span aria-required="true" class="required">(required)</span></label><textarea aria-required="true" class="required form-control" cols="30" id="message_f" name="comments" rows="6"></textarea></div>
+                <div cols="30" class="form-group submit-group col-sm-12 col-md-12 "> I am not a robot, to verify please answer 8+7 is equal to <input required name="Challenge" type="text" value="" class="form-control" /> </div><br>
+                <div class="submit-group"> <button class="btn " type="submit">Submit</button>
+                    <p class="privacy-note">We respect your privacy. We do not sell, rent, or loan any information to any third party. Any information you give us is held with the utmost care and security, and will be used only in ways to which you have consented.</p>
+                </div>
+            </form>
+        </div>
+        <div class="tab-pane investor_tab" [ngClass]='classinvestor' id="investor" data-anchor-title="Investor">
+            <h2> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"> <path d="M768 890l546 546q-106 108-247.5 168t-298.5 60q-209 0-385.5-103t-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103v762zm187 6h773q0 157-60 298.5t-168 247.5zm709-128h-768v-768q209 0 385.5 103t279.5 279.5 103 385.5z"></path> </svg>                Become an Investor </h2>
+            <p>Please fill out the form below to receive company press releases via email when they occur.</p>
+            <div id="EmailDiv"> </div>
+            <p class="privacy-note" style="font-size:16px">We respect your privacy. We do not sell, rent, or loan any information to any third party. Any information you give us is held with the utmost care and security, and will be used only in ways to which you have consented.</p>
+        </div>
+        <div class="tab-pane contactHR_tab" [ngClass]='classcontactHR' data-anchor-title="contact" id="contact">
+            <h2> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"> <path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"></path> </svg>                Contact HR</h2>
+            <h3>PolarityTE's mission is to become a leader in the regenerative medicine and biotechnology industries. </h3>
+            <p>To achieve this goal, PolarityTE recognizes that success begins with the vitality and talents of the employees, individually and collectively, who work at PolarityTE. We are always looking for talented professionals to join our team.<br>We
+                invite you to check out our <a href="/careers" style="font-size:19px">current openings</a> or contact our Human Resources Department below. </p>
+            <form ngNoForm action="https://www.b2i.us/profiles/investor/FormHandler.asp" method="post"> <input type="hidden" name="BzID" value="2361" /> <input type="hidden" name="FormKey" value="21f6T5g2f9W6O3B" />
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 ">
+                        <div class="form-group"><label for="first_name_f">First Name&nbsp;<span aria-required="true" class="required">(required)</span></label><input required aria-required="true" class="required form-control s" id="first_name_f" maxlength="40" minlength="2"
+                                name="firstname" type="text" value="" /></div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 ">
+                        <div class="form-group"><label for="last_name_f">Last Name&nbsp;<span aria-required="true" class="required">(required)</span></label><input required aria-required="true" class="required form-control lettersonly" id="last_name_f" maxlength="40" minlength="2"
+                                name="lastname" type="text" value="" /></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-12 col-md-6"><label for="email_f">Email&nbsp;<span aria-required="true" class="required">(required)</span></label><input required aria-required="true" class="required form-control" id="email_f" name="email" type="email" value="" /></div>
+                </div>
+                <div class="form-group"><label for="message_f">Message&nbsp;<span aria-required="true" class="required">(required)</span></label><textarea aria-required="true" class="required form-control" cols="30" id="message_f" name="comments" rows="6"></textarea></div>
+                <div cols="30" class="form-group submit-group col-sm-12 col-md-12 "> I am not a robot, to verify please answer 8+7 is equal to <input required name="Challenge" type="text" value="" class="form-control" /> </div><br>
+                <div class="submit-group"> <button class="btn " type="submit">Submit</button>
+                    <p class="privacy-note">We respect your privacy. We do not sell, rent, or loan any information to any third party. Any information you give us is held with the utmost care and security, and will be used only in ways to which you have consented.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<app-footer (sendvalue)='getvalue($event)'></app-footer>

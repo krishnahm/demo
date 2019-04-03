@@ -1,0 +1,245 @@
+/* Page Banner and video */
+
+.landing-wrapper {
+    position: relative;
+    top: 95px;
+}
+
+@media screen and (max-width: 991px) {
+    .landing-wrapper {
+        position: static;
+    }
+}
+
+.page-banner.overlay.video,
+.page-banner2,
+.page-banner3 {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 33px solid #000;
+}
+
+@media screen and (min-width: 992px) {
+    .page-banner,
+    body.has-sub-nav .page-banner {
+        margin-top: 0;
+    }
+    body.has-sub-nav .page-banner {
+        margin-top: 152px;
+    }
+    .page-banner video {
+        display: block;
+    }
+}
+
+.page-banner,
+.page-banner .vertical-align {
+    height: 400px;
+}
+
+.page-banner {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.page-banner .vertical-align {
+    position: relative;
+    z-index: 2;
+}
+
+.vertical-align {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#cba_bg,
+#mngmnt_bg,
+#bod_bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+}
+
+
+/* 
+
+//H2 tag in banner */
+
+.page-banner .text {
+    text-align: center;
+    padding: 32px 0;
+}
+
+.vertical-align>.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.page-banner:not(.home-hero) h2 {
+    color: #fff;
+}
+
+.page-banner h2 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+h2,
+h2 a {
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: none;
+}
+
+h2 {
+    margin: 0 0 20px;
+}
+
+
+/* 
+Member Images */
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.team-member-holder img {
+    width: 100%;
+}
+
+.member-photo-list {
+    border-top: 5px solid #6f5184;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.member-box-info {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    padding: 0;
+    display: table;
+    height: 100%;
+    width: 55%;
+}
+
+.member-text {
+    padding-left: 35px;
+}
+
+.member-text,
+.member-text-row2 {
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.member-text h3,
+.member-text-row2 h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+.member-text h5,
+.member-text-row2 h5 {
+    font-style: italic;
+    text-align: center;
+}
+
+.member-text span,
+.member-text-row2 span {
+    font-style: italic;
+}
+
+.member-text img,
+.member-text-row2 img {
+    height: 20px;
+    width: 20px;
+}
+
+.member-text-row2 {
+    padding-right: 35px;
+}
+
+.member-box-info2 {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    padding: 0;
+    display: table;
+    height: 100%;
+    width: 55%;
+}
+
+.member-box-info {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    padding: 0;
+    display: table;
+    height: 100%;
+    width: 55%;
+}
+
+span {
+    cursor: pointer;
+}
+
+
+/* 
+BIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+
+
+/* Button to retun to manegement team*/
+
+.btn {
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-color: #fff;
+    min-width: 196px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 1000px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.member-description h3 {
+    font-weight: 700;
+}
+
+.member-description h5 {
+    font-style: italic;
+}
+
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 767px) {
+    .page-banner,
+    .page-banner .vertical-align {
+        height: auto;
+        min-height: 170px;
+    }
+}

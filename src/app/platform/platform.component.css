@@ -1,0 +1,222 @@
+.stick {
+    position: fixed;
+    top: 0
+}
+
+.page-banner2,
+.page-banner3 {
+    border-bottom: 33px solid #000;
+    position: relative;
+    overflow: hidden;
+    z-index: 0
+}
+
+.page-banner2 .vertical-align {
+    height: 650px
+}
+
+.page-banner2 .vertical-align,
+.page-banner3 .vertical-align {
+    position: relative;
+    z-index: 2
+}
+
+#whatisPolarity {
+    padding: 140px 0
+}
+
+.vertical-align {
+    display: table;
+    width: 100%;
+    table-layout: fixed
+}
+
+#plt_bg {
+    width: 100%;
+    position: relative;
+    top: 0;
+    object-fit: cover
+}
+
+#overlay,
+.below_text {
+    position: absolute;
+    left: 0;
+    right: 0
+}
+
+#plt_bg-img {
+    display: none
+}
+
+#howitworks .text {
+    text-align: center
+}
+
+#howitworks h2 {
+    font-weight: 500;
+    font-size: 42px;
+    padding-top: 5%
+}
+
+#howitworks p {
+    color: #000!important;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px
+}
+
+.simplify {
+    float: left;
+    padding-top: 10%
+}
+
+.flexibility p,
+.simplify p {
+    text-align: left!important
+}
+
+.flexibility {
+    float: right;
+    padding-top: 10%
+}
+
+.under_line {
+    width: 50%;
+    height: 3px;
+    background-color: #a6a0a2;
+    margin-left: 24%
+}
+
+#platform-page-banner h2,
+.page-banner .text {
+    text-align: center
+}
+
+.vertical-align>.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%
+}
+
+#platform-page-banner h2,
+.page-banner2:not(.home-hero) h2,
+.page-banner:not(.home-hero) h2,
+p {
+    color: #fff
+}
+
+.page-banner3:not(.home-hero) h2,
+p {
+    color: #fff;
+    text-align: left
+}
+
+#platform-page-banner h2,
+.page-banner2 h2,
+.page-banner3 h2 {
+    font-size: 50px;
+    margin: 0
+}
+
+h2,
+h2 a {
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: none
+}
+
+.page-banner2 .text h2,
+.page-banner3 .text h2 {
+    font-size: 45px;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .6)
+}
+
+#platform-page-banner,
+#platform-page-banner .vertical-align {
+    height: 400px
+}
+
+.page-banner2 .text {
+    text-align: left;
+    max-width: 660px;
+    margin: 0 auto
+}
+
+.page-banner2 .text h2 {
+    margin-bottom: 5px
+}
+
+.page-banner3 .text {
+    margin: 40px auto
+}
+
+.page-banner3 .text h2 {
+    margin-bottom: 5px
+}
+
+@media screen and (max-width:1199px) {
+    #platform-page-banner,
+    #platform-page-banner .vertical-align {
+        height: 200px!important
+    }
+}
+
+@media screen and (min-width:991px) {
+    .page-banner2 .text {
+        margin: 0 75px
+    }
+}
+
+@media screen and (max-width:991px) {
+    #plt_bg-img,
+    .page-banner2 .vertical-align,
+    .page-banner3 .vertical-align {
+        height: auto
+    }
+    #howitworks p,
+    .under_line {
+        width: 100%!important
+    }
+    .page-banner .text,
+    .text {
+        padding: 30px 15px
+    }
+    #overlay,
+    #plt_bg,
+    .below_text {
+        display: none!important
+    }
+    #plt_bg-img {
+        display: block;
+        max-width: 100%
+    }
+    #howitworks {
+        height: auto!important
+    }
+    .under_line {
+        margin-left: 0!important
+    }
+    #whatisPolarity {
+        padding: 0
+    }
+    #PolarityTe_Platform {
+        background-attachment: scroll!important
+    }
+}
+
+#overlay {
+    top: 0;
+    z-index: 2147483647;
+    bottom: 0
+}
+
+#overlay h2 {
+    padding: 80px 0
+}
+
+.below_text {
+    bottom: 20%
+}

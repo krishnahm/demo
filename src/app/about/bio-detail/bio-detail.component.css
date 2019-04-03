@@ -1,0 +1,149 @@
+.pageContainer .outerWrapper:last-child {
+    border-bottom-width: 0
+}
+
+.hero {
+    height: 400px;
+    text-align: center;
+    border: 0;
+    border-bottom: 33px solid #000
+}
+
+.hero .innerWrapper {
+    position: relative
+}
+
+.innerWrapper {
+    height: 100%;
+    width: 100%;
+    max-width: 765px;
+    margin: auto;
+    padding: 50px 30px
+}
+
+.outerWrapper-textModule {
+    border-top: 5px solid #0451ae;
+    background-color: #24272a;
+    padding-bottom: 25px
+}
+
+.hero-wrapper img {
+    position: absolute;
+    left: 4%;
+    margin-top: 50px;
+    border-radius: 25px
+}
+
+.hero.profile .hero-content-wrapper {
+    padding-left: 20px
+}
+
+.hero.left .hero-content-wrapper,
+.hero.profile .hero-content-wrapper {
+    height: auto;
+    position: absolute;
+    bottom: 24px;
+    left: 0
+}
+
+.hero .hero-content-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative
+}
+
+.hero.profile .hero-content {
+    top: 30%;
+    text-align: left;
+    max-width: 255px;
+    margin: 0
+}
+
+.hero .hero-content {
+    position: relative;
+    color: #fff
+}
+
+.hero h1 {
+    font-size: 32px
+}
+
+.hero h2 {
+    margin-top: 10px;
+    line-height: 1.2em;
+    font-size: 18px;
+    font-style: italic
+}
+
+.hero .hero-invisible-click {
+    width: 40%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0
+}
+
+.pageTeamProfile .textItemSingle {
+    max-width: 765px
+}
+
+.textItemSingle.align-left {
+    text-align: left
+}
+
+.textItemSingle {
+    max-width: 670px;
+    text-align: center;
+    margin: auto
+}
+
+.pageTeamProfile .textItemSingle p {
+    margin-bottom: 20px;
+    color: #fff
+}
+
+.p-tag,
+h2,
+h3,
+p {
+    line-height: 150%
+}
+
+@media screen and (min-width:840px) {
+    .hero.profile .hero-content-wrapper {
+        position: relative;
+        height: 100%
+    }
+    .hero.profile .hero-content {
+        margin: 0 0 0 auto
+    }
+    .innerWrapper {
+        padding-left: 0;
+        padding-right: 0
+    }
+    .hero-wrapper img {
+        position: absolute;
+        left: 30%;
+        margin-top: 55px
+    }
+}
+
+.btn {
+    min-width: 196px;
+    border-radius: 1000px;
+    background: 0 0;
+    border: 2px solid #FFF;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    padding: 16px 25px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.42857143
+}
+
+.btn:hover {
+    color: #000!important;
+    background: #fff
+}

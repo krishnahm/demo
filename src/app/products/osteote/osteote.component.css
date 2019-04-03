@@ -1,0 +1,313 @@
+.page-banner h2,
+.page-banner-text-left h2,
+p {
+    color: #fff
+}
+
+.row {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap
+}
+
+@media screen and (min-width:576px) {
+    .row>div {
+        -webkit-flex: 1
+    }
+}
+
+#osteo-page-banner .vertical-align {
+    height: 350px
+}
+
+#osteo-page-banner,
+.page-banner {
+    position: relative;
+    overflow: hidden;
+    z-index: 0
+}
+
+.page-banner .vertical-align {
+    background-color: rgba(0, 0, 0, .4)
+}
+
+.form-submitted,
+.que-form {
+    background: #28272c
+}
+
+.vertical-align {
+    display: table;
+    width: 100%;
+    table-layout: fixed
+}
+
+#osteote_bg_75 {
+    display: none
+}
+
+#osteote_bg_68 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover
+}
+
+#osteo-page-banner,
+.page-banner,
+.page-banner-center,
+.page-banner-last,
+.page-banner-text-left,
+.que-form {
+    border-bottom: 33px solid #000
+}
+
+#osteo-page-banner h2 {
+    text-align: center;
+    padding: 32px 0;
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 0
+}
+
+.vertical-align>.wrapper-text {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%
+}
+
+h2,
+h2 a {
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: none
+}
+
+h2 {
+    margin: 0 0 20px
+}
+
+.page-banner .vertical-align,
+.page-banner-text-left .vertical-align {
+    height: 500px
+}
+
+#osteo-page-banner,
+.page-banner .vertical-align {
+    position: relative;
+    z-index: 2
+}
+
+.page-banner .text,
+.page-banner-center .text {
+    width: 100%;
+    position: relative;
+    z-index: 99!important
+}
+
+.page-banner .text {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto
+}
+
+.page-banner h2 {
+    font-size: 50px;
+    margin-bottom: 5px;
+    font-weight: 600
+}
+
+#custom-modal-1 p {
+    color: #fff!important
+}
+
+.page-banner-center h2,
+.page-banner-last h2,
+.que-form,
+p {
+    color: #fff
+}
+
+.page-banner-center img,
+.page-banner-last img {
+    width: 100%
+}
+
+.page-banner-last .text,
+.page-banner-text-left .text {
+    text-align: left;
+    max-width: 660px;
+    margin: 0 auto
+}
+
+.page-banner-center .text h2,
+.page-banner-last .text h2,
+.page-banner-text-left .text h2 {
+    font-size: 45px;
+    margin-bottom: 5px!important;
+    font-weight: 600
+}
+
+.page-banner-center .text {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 65px
+}
+
+label {
+    font-weight: 400!important
+}
+
+.required {
+    color: #898989
+}
+
+input:focus,
+textarea:focus {
+    outline: 0!important;
+    border: 2px solid #d87f45
+}
+
+.module-form {
+    padding: 85px 0
+}
+
+.heading-center h1 {
+    font-size: 50px;
+    text-align: center
+}
+
+.heading-center {
+    margin-bottom: 50px
+}
+
+.privacy-note {
+    line-height: 1.3;
+    font-style: italic;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 70%;
+    margin: 0 0 0 20px
+}
+
+#custom-modal-1 .btn,
+.btn {
+    min-width: 196px;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+    cursor: pointer
+}
+
+.form-submitted {
+    color: #fff;
+    height: auto;
+    width: auto
+}
+
+.form-submitted .text h1,
+.form-submitted .text p {
+    text-align: center
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:hover {
+    background: #fff!important;
+    color: #000;
+    text-decoration: none
+}
+
+.btn {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 1000px;
+    background: 0 0
+}
+
+#custom-modal-1 .btn:hover {
+    background: #000!important;
+    color: #fff;
+    text-decoration: none
+}
+
+#custom-modal-1 .btn {
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 1000px;
+    background: #fff
+}
+
+@media screen and (max-width:991px) {
+    .que-form {
+        height: auto
+    }
+    .privacy-note {
+        display: block;
+        max-width: 100%;
+        margin: 20px 0
+    }
+    #osteote_bg_68 {
+        display: none
+    }
+    #osteote_bg_75 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        object-fit: cover
+    }
+}
+
+@media screen and (min-width:1199px) {
+    .page-banner-last .row:nth-child(1) {
+        padding-top: 65px
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .page-banner .text,
+    .page-banner .wrapper-text,
+    .page-banner-center .text,
+    .page-banner-center .wrapper-text,
+    .page-banner-last .text,
+    .page-banner-last .wrapper-text,
+    .page-banner-last img,
+    .page-banner-text-left .text,
+    .page-banner-text-left .wrapper-text {
+        padding: 30px 15px
+    }
+    #osteo-page-banner .vertical-align {
+        height: 200px
+    }
+    .page-banner .vertical-align,
+    .page-banner-last .vertical-align,
+    .page-banner-text-left .vertical-align {
+        height: auto
+    }
+    img {
+        width: 100%
+    }
+}
+
+@media screen and (max-width:1300px) {
+    #osteo-page-banner .vertical-align {
+        height: 200px
+    }
+}
+
+@media screen and (min-width:1301px) and (max-width:1900px) {
+    #osteo-page-banner .vertical-align {
+        height: 300px
+    }
+}

@@ -1,0 +1,267 @@
+.page-banner.overlay.video {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .1);
+    border-bottom: 33px solid #000
+}
+
+@media screen and (min-width:992px) {
+    .page-banner,
+    body.has-sub-nav .page-banner {
+        margin-top: 0
+    }
+    body.has-sub-nav .page-banner {
+        margin-top: 152px
+    }
+    .page-banner video {
+        display: block
+    }
+    .page-banner {
+        background-image: url(/assets/management-assets/01_hero/blueSwirl_bio_bg.jpg);
+        background-color: #000;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+}
+
+.page-banner,
+.page-banner .vertical-align {
+    height: 250px
+}
+
+.page-banner {
+    position: relative;
+    overflow: hidden;
+    z-index: 0
+}
+
+.page-banner .vertical-align {
+    position: relative;
+    z-index: 2
+}
+
+.vertical-align {
+    display: table;
+    width: 100%;
+    table-layout: fixed
+}
+
+#bod_bg,
+#cba_bg,
+#mngmnt_bg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    border-bottom: 1px solid transparent
+}
+
+.page-banner .text {
+    text-align: center;
+    padding: 32px 0
+}
+
+.vertical-align>.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%
+}
+
+.page-banner:not(.home-hero) h2 {
+    color: #fff
+}
+
+.page-banner h2 {
+    font-size: 50px;
+    margin-bottom: 0
+}
+
+h2,
+h2 a {
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: none
+}
+
+h2 {
+    margin: 0 0 20px
+}
+
+.innerWrapper {
+    border-top: 5px solid #a49d9f;
+    background-color: #000;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin: auto
+}
+
+.headshotGrid {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.headshotColumn {
+    max-width: 50%;
+    flex-basis: 50%;
+    padding: 0 5px
+}
+
+.headshotItem {
+    margin: 0 auto 15px;
+    display: block;
+    color: #fff
+}
+
+.headshotImage {
+    position: relative
+}
+
+.headshotItem img {
+    width: 100%;
+    float: left
+}
+
+.innerWrapper img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    border-radius: 25px
+}
+
+.clearfix::after,
+.clearfix::before {
+    content: " ";
+    display: table
+}
+
+.headshotImage .headshotOverlay:focus,
+.headshotImage .headshotOverlay:focus p,
+.headshotImage .headshotOverlay:hover,
+.headshotImage .headshotOverlay:hover p {
+    opacity: 1;
+    border-radius: 25px
+}
+
+.headshotImage .headshotOverlay span {
+    font-style: italic;
+    text-decoration: underline;
+    position: relative;
+    bottom: 15%;
+    display: block;
+    outline: 0
+}
+
+.headshotItem span {
+    font-style: italic;
+    font-size: 14px
+}
+
+.headshotImage .headshotOverlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #016bd0;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: opacity .2s ease;
+    -o-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    padding: 0 10px
+}
+
+.headshotImage .headshotOverlay p {
+    opacity: 0;
+    -webkit-transition: opacity .2s ease;
+    -o-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+    -webkit-transition-delay: .1s;
+    -o-transition-delay: .1s;
+    transition-delay: .1s
+}
+
+.p-tag,
+h2,
+h3,
+p {
+    line-height: 150%
+}
+
+h3 {
+    font-size: 16px
+}
+
+@media screen and (min-width:991px) {
+    .headshotColumn {
+        max-width: 20%;
+        flex-basis: 25%;
+        padding: 0 5px
+    }
+}
+
+@media screen and (min-width:840px) {
+    .headshotImage .headshotOverlay span {
+        font-style: italic;
+        text-decoration: underline;
+        position: relative;
+        bottom: 15%;
+        display: block
+    }
+    .headshotItem span {
+        font-style: italic
+    }
+    h3 {
+        font-size: 24px
+    }
+    .headshotImage .headshotOverlay {
+        font-size: 20px
+    }
+}
+
+@media screen and (max-width:991px) {
+    .page-banner {
+        background: url(../../../assets/management-assets/01_hero/blueSwirl_bio_bg.jpg) 50% 50% no-repeat;
+        background-size: cover;
+        height: auto;
+        min-height: 170px
+    }
+    #bod_bg,
+    #cba_bg,
+    #mngmnt_bg {
+        display: none
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .page-banner .vertical-align {
+        height: 200px
+    }
+}
+
+@media screen and (max-width:576px) {
+    .read_more,
+    p {
+        font-size: 11px!important
+    }
+    .headshotImage .headshotOverlay {
+        padding: 0 5px
+    }
+}
+
+@media screen and (max-width:335px) {
+    .read_more,
+    p {
+        font-size: 9px!important
+    }
+    .headshotImage .headshotOverlay {
+        padding: 0 5px
+    }
+}

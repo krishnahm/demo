@@ -1,0 +1,49 @@
+<app-header></app-header>
+<app-sub-header [subNavArr]="dataSrc[4].children" [subNavArr2]='dataSrc[4]'></app-sub-header>
+<div class="page-banner overlay video">
+    <div class="vertical-align">
+        <img src="./assets/financialInfo-assets/financial-banner.jpg" id="img_bg">
+        <div class="wrapper text">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="bounceInUp">Financial Info</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="border-bottom:33px solid #000000;margin: 0;">
+    <aside class="col-lg-3 col-md-12 col-sm-12 sidebar-nav" style="background: url(./assets/companyInfo-assets/leftSidebar.mask.jpg);background-position: center;background-size: cover; ">
+        <nav class="sb-nav">
+            <ul>
+                <li class="sidebar-title">
+                    <h3>Financial Information</h3>
+                </li>
+                <li>
+                    <a (click)='openCashFlow()' [style.color]="quotecolor">
+                        <span>Cash Flow</span>
+                    </a>
+                </li>
+                <li>
+                    <a (click)='openIncomeStatement()' [style.color]="chartcolor">
+                        <span>Income Statement</span>
+                    </a>
+                </li>
+                <li>
+                    <a (click)='openBalancedSheet()' [style.color]="historicalcolor">
+                        <span>Balance Sheet</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="col-lg-9 col-md-12 col-sm-12 js-same-height active" style="background: url(./assets/stock-data-assets/BG.jpg);background-position: center;background-repeat: no-repeat;background-size: cover; width: 100%;">
+        <div class="tab-content">
+            <h2>{{heading}}</h2>
+            <div id="Fin1Div" [style.display]="hidequote"></div>
+            <div id="Fin2Div" [style.display]="hidecharts"></div>
+            <div id="Fin3Div" [style.display]="hidehistorical"></div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

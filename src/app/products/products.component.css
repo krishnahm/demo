@@ -1,0 +1,182 @@
+.page-banner2 .text,
+.page-banner3 .text,
+.under_line {
+    max-width: 660px
+}
+
+.row {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap
+}
+
+@media screen and (min-width:576px) {
+    .row>div {
+        -webkit-flex: 1
+    }
+}
+
+#products-page-banner .vertical-align {
+    height: 400px
+}
+
+#products-page-banner,
+.page-banner,
+.page-banner2,
+.page-banner3 {
+    border-bottom: 33px solid #000
+}
+
+#products-page-banner {
+    position: relative;
+    overflow: hidden;
+    z-index: 0
+}
+
+#products-page-banner .text {
+    text-align: center;
+    padding: 32px 0
+}
+
+.vertical-align>.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%
+}
+
+.vertical-align {
+    display: table;
+    width: 100%;
+    table-layout: fixed
+}
+
+#products-page-banner h2,
+.page-banner2:not(.home-hero) h2,
+.page-banner3:not(.home-hero) h2,
+.page-banner:not(.home-hero) h2,
+p {
+    color: #fff
+}
+
+p {
+    font-size: 16px;
+    margin: 0 0 20px
+}
+
+#products-page-banner h2,
+.page-banner h2,
+.page-banner2 h2,
+.page-banner3 h2 {
+    font-size: 50px;
+    margin-bottom: 0
+}
+
+#products-page-banner h2,
+.page-banner .text {
+    text-align: center
+}
+
+h2,
+h2 a {
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: none
+}
+
+h2 {
+    margin: 0 0 20px
+}
+
+.page-banner .vertical-align {
+    height: 650px
+}
+
+.page-banner2 .vertical-align,
+.page-banner3 .vertical-align {
+    height: 380px
+}
+
+.page-banner2 .text h2,
+.page-banner3 .text h2 {
+    font-size: 45px;
+    margin-bottom: 5px!important;
+    font-weight: 600
+}
+
+.under_line {
+    height: 3px;
+    background-color: #fff;
+    margin: 15px auto
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+    text-decoration: none
+}
+
+.btn {
+    min-width: 260px;
+    color: #fff;
+    border: 2px solid #fff;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 1000px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin-right: 30px
+}
+
+.left_side_ball,
+.right_side_ball {
+    height: 350px
+}
+
+@media screen and (max-width:767px) {
+    .page-banner2 .text,
+    .page-banner3 .text {
+        margin: auto
+    }
+}
+
+@media screen and (max-width:1433px) {
+    .btn {
+        margin-top: 15px
+    }
+}
+
+@media screen and (max-width:1199px) {
+    #products-page-banner .vertical-align {
+        height: 200px!important
+    }
+    .page-banner .vertical-align {
+        height: auto
+    }
+}
+
+@media screen and (max-width:991px) {
+    .page-banner .vertical-align,
+    .page-banner2 .vertical-align,
+    .page-banner3 .vertical-align {
+        padding: 15px
+    }
+    .left_side_ball,
+    .right_side_ball {
+        display: block;
+        height: auto;
+        max-width: 250px;
+        margin: 15px auto
+    }
+    .under_line {
+        width: 100%
+    }
+    .page-banner2 .vertical-align,
+    .page-banner3 .vertical-align {
+        height: auto
+    }
+}

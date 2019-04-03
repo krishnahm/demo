@@ -1,0 +1,5 @@
+{
+    "editor.wordWrap": "bounded",
+    "git.ignoreLimitWarning": true,
+    "telemetry.enableTelemetry": false
+}

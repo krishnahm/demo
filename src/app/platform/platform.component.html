@@ -1,0 +1,75 @@
+<app-header (sendvaluepl)='getvalue($event)'></app-header>
+<div sticky class="sub-navigation ir-navigation">
+    
+        <nav class="collapse sb-nav clearfix" id="sub-navigation">
+            <h3 class="hidden-sm hidden-xs"> <a routerLink="/platform">Platform</a> </h3>
+            <ul>
+                <li [ngClass]='classwhatisPolarity' (click)="getvalue('whatispolarity')"><a pageScroll [pageScrollSpeed]="3000" href='#whatisPolarity'>What is PolarityTE?</a> </li>
+                <li [ngClass]='classpolarityteplatform' (click)="getvalue('polarityteplatform')"> <a pageScroll [pageScrollSpeed]="3000" href='#polarityte_platform'>PolarityTE Platform</a> </li>
+                <li [ngClass]='classhowitworks' (click)="getvalue('howitworks')"> <a pageScroll [pageScrollSpeed]="3000" href='#howitworks'>    How it Works?</a> </li>
+            </ul>
+        </nav>
+   
+</div>
+
+<div id="platform-page-banner" style="background: url(../assets/platform-assets/platform.png);background-position: 50% 60%;background-repeat: no-repeat;background-size: cover;">
+    <div class="vertical-align">
+        <div class="wrapper text">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="bounceInUp">Platform</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-banner3 " id="whatisPolarity" style="border-top: 5px solid #d7d7d7">
+
+    <video muted playsinline autoplay id="plt_bg"> <source src="./assets/platform-assets/csb_animTriflow_short_LITE03.mp4" type="video/mp4"> </video>
+    <div id="overlay">
+        <h2 style="color: #0070c9 !important;text-align: center">What is Polarity?</h2>
+    </div>
+    <img id="plt_bg-img" src="./assets/platform-assets/comp_forTextPlacement.png" alt="What is Polarity?">
+    <div class="below_text" id='polarityteplatform'>
+        <div>
+            <p style="color: #000 !important;margin: auto;text-align: center"> po•lar•i•ty: the asymmetric organization of cellular elements, which allows development of specialized tissue and downstream function.</p>
+        </div>
+    </div>
+</div>
+<div class="page-banner2" id='polarityte_platform' style="border-top: 5px solid #4aabaa;background: url(../assets/platform-assets/PolarityPlatform.png);background-position: 50% 45%;background-repeat: no-repeat;background-size: cover;background-attachment: fixed" [ngClass]='classpolarityteplatform'>
+    <div class="vertical-align" style="background-color: rgba(0, 0, 0, 0.4);">
+        <div class="wrapper text">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="text">
+                        <h2>The PolarityTE Platform</h2>
+                        <p id="how_it_works">Our platform technology harnesses natural regeneration and allows cells to function as they normally do in the body. Through the revolutionary platform, we seek to induce cells and tissue polarity, and create functional tissue.
+                            Our goal is to apply the platform across all cells, tissues and composition structures, transforming regenerative medicine into what has been envisioned since its inception.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="howitworks" style="border-top: 5px solid #99c5ff;height: 800px; background: url(../assets/platform-assets/WaterDropwPattern.jpg);background-position: 50% 75%;background-repeat: no-repeat;background-size: cover;">
+    <div class="vertical-align" >
+        <div class="wrapper text">
+            <div class="text">
+                <h2>How It Works?</h2>
+                <p>Our manufacturing process is simple and flexible. Our platform allows us to develop products that are autologous—from the patient, for the patient—and homologous—skin for skin, bone for bone, etc.</p>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+                <h2>Simplicity</h2>
+                <div class="under_line"></div>
+                <p>After a small full-thickness tissue sample from a patient is sent to PolarityTE, the construct will be created and returned for application on or in the same patient.</p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h2>Flexibility</h2>
+                <div class="under_line"></div>
+                <p>Constructs are being developed to accommodate different sizes and needs across multiple tissue types. Our manufacturing process is also being developed to allow for cryopreservation to meet future patient needs.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

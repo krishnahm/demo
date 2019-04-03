@@ -1,0 +1,92 @@
+<app-header></app-header>
+<app-sub-header [subNavArr]="dataSrc[2].children" [subNavArr2]='dataSrc[2]'>
+</app-sub-header>
+<div class="page-banner-rta-banner" style=" background: url(./assets/rta-assets/rta_hero_bg.jpg);background-position: center;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;overflow: hidden;position: relative;">
+    <div class="image-wrapper ">
+        <img src="./assets/rta-assets/rta_hero_androidChat.png" alt="">
+    </div>
+    <div class=" vertical-align ">
+        <div class='wrapper'>
+            <div class="row ">
+                <div class="col-md-12 col-lg-6 col-xl-6 col-lg-offset-1 ">
+                    <div class="text ">
+                        <h2>What is the RTA?</h2>
+                        <div class="under_line"></div>
+                        <p>The advanced Real-Time Assistant (RTA) allows medical providers to communicate with the PolarityTE Physician-led Clinical Operations Team 24-hours a Day via Text, Email, Video Chat or Phone. From this HIPAA-compliant messaging
+                            platform providers can track issues, conduct peer-to-peer QA, submit images or videos for review.</p>
+                        <a style="margin-right: 5px; " pageScroll [pageScrollSpeed]="3500" class="btn" id="download-btn" href="#download">Download now</a>
+
+                        <a class="btn" target="_blank " style="margin-left: 25px;" href="https://rta.polarityte.com/">login to web app</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-banner-rta-assistant" style="border-top: 5px solid #78c0dd; background: url(./assets/rta-assets/blueBG.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;position: relative">
+    <div class="row">
+        <div class="col-sm-6 col-sm-push-6">
+            <div class="text ">
+                <h2>The PolarityTE 24-Hour Real-Time Assistant for Providers</h2>
+                <div class='under_line' style="background: #fff;"></div>
+                <ul>
+                    <li>HIPAA compliant Text, Email, Video Chat or Phone with a PolarityTE Clinical <br> Operations Team and providers 24-hours a day</li>
+                    <li>Real-time package tracking</li>
+                    <li>Easy-to-read educational instructions</li>
+                    <li>Answers to the most frequently asked questions</li>
+                    <li>Secure, HIPAA-compliant one-touch form submission directly to PolarityTE</li>
+                </ul>
+
+
+                <div (click)="autoplayVideo(videoHipaa)" data-target="#myCarousel" data-slide-to="0" class="col-xs-12 col-md-6"><span class="btn full-width  video-btn">See Chat Features</span></div>
+                <div (click)="autoplayVideo(videoForm)" data-target="#myCarousel" data-slide-to="1" class="col-xs-12 col-md-6"><span style="margin-left: 0" class="btn full-width  video-btn">See Form Submission</span></div>
+                <div (click)="autoplayVideo(videoTracking)" data-target="#myCarousel" data-slide-to="2" class="col-xs-12 col-md-6"><span class="btn full-width  video-btn">See Tracking Features</span></div>
+
+
+            </div>
+        </div>
+        <div class='col-sm-6 col-sm-pull-6 '>
+            <div class="cellphone-slideshow-wrapper">
+                <div class="cycle-slideshow cellphone-slideshow" style="position: relative;">
+                    <div class="slide cycle-slide" #carousel style="position: static; top: 0px; left: 0px; z-index: 100; opacity: 1; display: block; overflow: hidden;">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval='false' data-cycle-fx="scrollHorz" data-cycle-pause-on-hover="true" data-cycle-slides=" > .slide" data-cycle-swipe="true" data-cycle-pager="#per-slide-template">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <video #videoHipaa controls playsinline muted autoplay poster='/assets/rta-assets/poster1.jpg'> <source src='./assets/rta-assets/appPreview_appStore_chat01_1.mp4' type="video/mp4"> </video>
+
+                                </div>
+                                <div class="item">
+                                    <video #videoForm controls muted playsinline autoplay poster='/assets/rta-assets/poster2.jpg'> <source src='./assets/rta-assets/appPreview_appStore_takePhoto01_1.mp4' type="video/mp4"> </video>
+                                </div>
+                                <div class="item">
+                                    <video #videoTracking playsinline controls muted autoplay poster='/assets/rta-assets/poster3.jpg'> <source src='./assets/rta-assets/appPreview_appStore_tracking01_1.mp4' type="video/mp4"> </video>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prev-arrow" href="#myCarousel" data-slide="prev" (click)="arrowClick(videoHipaa,videoForm,videoTracking)"></div>
+                        <div class="next-arrow" href="#myCarousel" data-slide="next" (click)="arrowClick(videoHipaa,videoForm,videoTracking)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id='download' class="module-wrapper">
+    <div class="module-default-border module-download-app no-parallax aquamarine-border " style="background: url(./assets/rta-assets/rta_download_bg.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;border-top: 5px solid #a2fbc5; ">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="text">
+                        <h2 class="main-title">Welcome to the SHIFT&reg;</h2>
+                        <h2 style="  font-weight:400">Download the App</h2>
+                        <p style="text-align: center;color: #000000">Available on iOS, Android, and any modern web browser.</p>
+                        <div class="app-download-row">
+                            <a href="https://pte.cool/AppStore" class="ios-download" target="_blank"></a>
+                            <a href="https://pte.cool/GooglePlay" class="android-download" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

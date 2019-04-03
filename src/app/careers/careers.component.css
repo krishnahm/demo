@@ -1,0 +1,160 @@
+#careers-page-banner,
+#careers-page-banner .vertical-align {
+    background-color: rgba(0, 0, 0, .4)
+}
+
+#careers-page-banner .vertical-align,
+.page-banner .vertical-align {
+    height: 400px
+}
+
+#careers-page-banner,
+.page-banner {
+    border-bottom: 33px solid #000
+}
+
+.current-openings {
+    background: #102f57;
+    border-bottom: 60px solid #102f57
+}
+
+#careers-page-banner {
+    position: relative;
+    overflow: hidden;
+    z-index: 0
+}
+
+#careers-page-banner .text {
+    text-align: center;
+    padding: 32px 0
+}
+
+.vertical-align>.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%
+}
+
+.vertical-align {
+    display: table;
+    width: 100%;
+    table-layout: fixed
+}
+
+p {
+    font-size: 16px;
+    margin: 0
+}
+
+#careers-page-banner h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 50px
+}
+
+h2,
+h2 a {
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: none
+}
+
+h2 {
+    margin: 0 0 20px
+}
+
+.page-banner:not(.home-hero) h2,
+p {
+    color: #fff
+}
+
+.page-banner .text {
+    text-align: center
+}
+
+.page-banner .text h2 {
+    font-size: 45px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .6)
+}
+
+.toggle:nth-child(odd) {
+    background-color: #27272b
+}
+
+.toggle:nth-child(even) {
+    background-color: #141417
+}
+
+.head-lists .vertical-align,
+.job-lists .vertical-align {
+    padding: 10px 0
+}
+
+.listing-link a {
+    margin-bottom: 7px;
+    font-size: 18px;
+    line-height: 22px;
+    display: inline-block
+}
+
+.btn:hover {
+    background: #fff!important;
+    color: #000;
+    text-decoration: none
+}
+
+.btn {
+    min-width: 196px;
+    color: #fff;
+    border: 2px solid #fff;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 1000px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    background: 0 0;
+    margin: 0 20px 0 0
+}
+
+#heading-career {
+    padding-left: 39%;
+    display: block;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+@media screen and (min-width:992px) {
+    .listing-link {
+        margin: 15px 0 13px
+    }
+}
+
+@media screen and (max-width:992px) {
+    .page-banner .vertical-align {
+        padding: 30px 15px;
+        height: auto
+    }
+    .head-lists .vertical-align,
+    .job-lists .vertical-align {
+        padding: 20px 0
+    }
+    .container {
+        max-width: 992px
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #careers-page-banner .vertical-align {
+        height: 200px
+    }
+}
+
+@media screen and (max-width:991px) {
+    #heading-career {
+        padding-left: 8%
+    }
+}

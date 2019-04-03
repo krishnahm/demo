@@ -1,0 +1,198 @@
+.row {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap
+}
+
+@media screen and (min-width:767px) {
+    .row>div {
+        -webkit-flex: 1
+    }
+}
+
+.page-banner .vertical-align {
+    height: 400px
+}
+
+.page-banner {
+    position: relative;
+    overflow: hidden;
+    z-index: 0
+}
+
+.vertical-align {
+    display: table;
+    width: 100%;
+    table-layout: fixed
+}
+
+#img_bg {
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    width: 100%
+}
+
+.page-banner,
+.page-banner .vertical-align {
+    border-bottom: 33px solid #000
+}
+
+.page-banner .text {
+    text-align: center;
+    padding: 32px 0
+}
+
+.vertical-align>.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%
+}
+
+.page-banner:not(.home-hero) h2 {
+    color: #fff
+}
+
+h2,
+h2 a {
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: none
+}
+
+.tab-content h2,
+h3 {
+    font-weight: 600
+}
+
+h2 {
+    margin: 0 0 20px
+}
+
+.active span {
+    color: #49a0df!important
+}
+
+.sidebar-nav ul li a,
+h2,
+h3 {
+    color: #fff
+}
+
+.page-banner h2 {
+    text-shadow: 2px 2px gray;
+    font-size: 50px;
+    margin-bottom: 0
+}
+
+.sb-nav {
+    padding: 145px 50px
+}
+
+.sb-nav ul li:first-child {
+    list-style: none
+}
+
+.sb-nav ul li {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    list-style: disc
+}
+
+.sb-nav ul li.sidebar-title {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 9px;
+    font-weight: 600;
+    border-bottom: 4px solid #fff
+}
+
+.sb-nav ul>li {
+    margin: 0;
+    padding: 0
+}
+
+h3 {
+    font-size: 28px
+}
+
+.sb-nav ul>li a span {
+    font-size: 18px
+}
+
+#Fin1Div,
+#Fin2Div,
+#Fin3Div {
+    color: #e2dddf
+}
+
+.sub-navigation h2 {
+    padding: 1% 0 2% 3%;
+    margin: 0 22px 0 0
+}
+
+@media screen and (min-width:992px) {
+    .sidebar-nav+.col-md-9 .tab-content {
+        padding-right: 0;
+        padding-left: 45px!important
+    }
+    .tab-content {
+        padding: 146px 50px!important
+    }
+}
+
+.tab-content h1,
+.tab-content h2.title {
+    margin-bottom: 45px
+}
+
+h2 {
+    font-size: 40px
+}
+
+@media screen and (max-width:768px) {
+    .sb-nav {
+        padding-bottom: 0!important;
+        padding-top: 25px!important
+    }
+    .company-overview .text {
+        width: 100%;
+        max-height: none
+    }
+}
+
+@media screen and (max-width:991px) {
+    .sb-nav li,
+    .sidebar-nav,
+    .sidebar-nav>div {
+        width: 100%
+    }
+    .right-sidebar,
+    .sidebar-nav,
+    .tab-content>.text {
+        min-height: 0!important
+    }
+    .sb-nav {
+        border-top: none;
+        padding: 0 15px
+    }
+    .sb-nav li {
+        display: block;
+        padding: 0;
+        margin: 0
+    }
+    .sidebar-nav ul li a {
+        padding: 5px 0
+    }
+    .tab-content {
+        padding: 45px 0
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .page-banner .vertical-align {
+        height: 200px
+    }
+}

@@ -1,0 +1,22 @@
+.active-link {
+    color: #0070c9;
+}
+
+.stick {
+    position: fixed;
+    top: 0;
+}
+
+.active-link:active::after,
+.active-link:focus::after,
+.active-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 70%;
+    max-width: 80%;
+    height: 3px;
+    background: #017eda;
+    width: 100%;
+}

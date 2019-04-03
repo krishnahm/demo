@@ -1,0 +1,15 @@
+<div sticky class="sub-navigation ir-navigation">
+    <div class="fixed">
+     
+            <nav class="collapse sb-nav clearfix" id="sub-navigation">
+                <h3 class="hidden-sm hidden-xs"><a [routerLink]="['/' + subDataMain.path]">{{subDataMain.name}}</a></h3>
+                <ul>
+                    <li *ngFor="let header of subData; let i=index">
+                        <a style="cursor: pointer;" [routerLink]="['/' + header.path]" routerLinkActive="active-link">{{header.name}}</a>
+
+                    </li>
+                </ul>
+            </nav>
+    
+    </div>
+</div>

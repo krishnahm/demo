@@ -1,0 +1,115 @@
+.active-link {
+    color: #0070c9
+}
+
+.stick {
+    position: fixed;
+    top: 0
+}
+
+.active-link::after,
+.active-link:active::after,
+.active-link:focus::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+    max-width: 80%;
+    height: 3px;
+    background: #017eda;
+    width: 100%
+}
+
+.page-banner .vertical-align {
+    height: 400px
+}
+
+.page-banner {
+    position: relative;
+    overflow: hidden;
+    z-index: 0
+}
+
+.vertical-align {
+    display: table;
+    width: 100%;
+    table-layout: fixed
+}
+
+#stock_bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    height: 100%
+}
+
+.page-banner,
+.page-banner .vertical-align {
+    border-bottom: 33px solid #000
+}
+
+.page-banner .text {
+    text-align: center;
+    padding: 32px 0
+}
+
+.vertical-align>.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%
+}
+
+.page-banner:not(.home-hero) h2 {
+    color: #fff
+}
+
+h2,
+h2 a {
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: none
+}
+
+h2 {
+    margin: 0 0 20px
+}
+
+.page-banner h2 {
+    font-size: 50px;
+    margin-bottom: 0
+}
+
+#all_events {
+    border-top: 5px solid #4af4ff;
+    padding: 50px 15%;
+    background: #000
+}
+
+#all_events h3 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px
+}
+
+@media screen and (max-width:600px) {
+    #all_events {
+        padding: 50px 20px!important
+    }
+}
+
+@media screen and (max-width:950px) {
+    #all_events {
+        padding: 50px
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .page-banner .vertical-align {
+        height: 200px
+    }
+    #all_events {
+        padding: 50px 10%
+    }
+}

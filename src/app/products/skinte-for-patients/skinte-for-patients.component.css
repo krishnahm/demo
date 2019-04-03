@@ -1,0 +1,387 @@
+#skinte_bg_68,
+#ste_info {
+    top: 0;
+    object-fit: cover;
+    width: 100%
+}
+
+h2,
+p {
+    margin: 0 0 20px
+}
+
+#ste_info,
+.page-banner,
+ul li {
+    position: relative
+}
+
+.module-title-content h2,
+.module-title-content li,
+.module-title-content p,
+.page-banner-text-right h2,
+.page-banner-text-right ol,
+.page-banner-text-right p {
+    text-shadow: 0 0 10px rgba(0, 0, 0, .6)
+}
+
+.row {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap
+}
+
+@media screen and (min-width:576px) {
+    .row>div {
+        -webkit-flex: 1
+    }
+}
+
+.page-banner .vertical-align {
+    height: 350px
+}
+
+.page-banner {
+    overflow: hidden;
+    z-index: 0
+}
+
+.vertical-align {
+    display: table;
+    width: 100%;
+    table-layout: fixed
+}
+
+#skinte_bg_75 {
+    display: none
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+#skinte_bg_68 {
+    height: 100%;
+    position: absolute
+}
+
+.module-title-content,
+.page-banner,
+.page-banner-text-right,
+.page-banner-video,
+.page-banner2,
+.page-banner3,
+.que-form {
+    border-bottom: 33px solid #000
+}
+
+.page-banner .text {
+    text-align: center;
+    padding: 32px 0
+}
+
+.vertical-align>.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%
+}
+
+.page-banner:not(.home-hero) h2 {
+    color: #fff
+}
+
+h2,
+h2 a {
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: none
+}
+
+h4 {
+    font-weight: 700
+}
+
+.page-banner-text-right:not(.home-hero) h2,
+p {
+    color: #fff
+}
+
+.page-banner2:not(.home-hero) h2,
+.page-banner3:not(.home-hero) h2,
+p {
+    color: #fff;
+    text-align: left
+}
+
+p {
+    font-size: 16px
+}
+
+.page-banner h2,
+.page-banner-text-right h2,
+.page-banner3 h2 {
+    font-size: 50px;
+    margin-bottom: 0
+}
+
+.page-banner3 .vertical-align {
+    height: 430px
+}
+
+.page-banner-text-right .vertical-align,
+.page-banner-video,
+.page-banner2 .vertical-align {
+    height: 750px
+}
+
+.page-banner-text-right .text {
+    max-width: 660px;
+    margin: 0 auto
+}
+
+.page-banner-text-right .text p {
+    margin: 5px
+}
+
+.page-banner2 .text {
+    text-align: left;
+    max-width: 660px;
+    margin: 0 auto
+}
+
+.page-banner3 .text {
+    max-width: 660px
+}
+
+.page-banner-text-right .text h2,
+.page-banner2 .text h2,
+.page-banner3 .text h2 {
+    font-size: 45px;
+    margin-bottom: 5px!important;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .6)
+}
+
+.module-title-content .module-title {
+    margin-bottom: 110px
+}
+
+.module-title-content {
+    position: relative;
+    padding: 45px 0
+}
+
+.center {
+    text-align: center
+}
+
+.module-title-content h2 {
+    font-size: 45px;
+    font-weight: 600;
+    margin: 0
+}
+
+.dark h2,
+.dark li,
+.dark p {
+    color: #fff
+}
+
+ul {
+    margin: 0 0 20px;
+    padding-left: 0
+}
+
+ul li {
+    list-style: none;
+    margin: 18px 0;
+    padding-left: 20px
+}
+
+.module-title-content ul li::before {
+    content: '\2022 ';
+    color: #fff;
+    margin-left: -16px;
+    margin-top: 2px;
+    font-size: 13px;
+    position: absolute
+}
+
+.page-banner-text-right ol {
+    color: #fff;
+    padding-left: 13px
+}
+
+.page-banner-text-right ol li {
+    margin: 18px 0;
+    padding-left: 5px
+}
+
+.under_line {
+    height: 3px;
+    width: 100%;
+    margin: 15px 0
+}
+
+#skin_cube {
+    height: 430px
+}
+
+.btn:hover {
+    background: #fff!important;
+    color: #000;
+    text-decoration: none
+}
+
+.btn {
+    min-width: 196px;
+    color: #fff;
+    border: 2px solid #fff;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 1000px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+    cursor: pointer
+}
+
+.que-form {
+    background: #28272c;
+    color: #fff
+}
+
+label {
+    font-weight: 400!important
+}
+
+.required {
+    color: #898989
+}
+
+input:focus,
+textarea:focus {
+    outline: 0!important;
+    border: 2px solid #d87f45
+}
+
+.module-form {
+    padding: 85px 0
+}
+
+.heading-center h1 {
+    font-size: 50px;
+    text-align: center
+}
+
+.heading-center {
+    margin-bottom: 50px
+}
+
+.privacy-note {
+    line-height: 1.3;
+    font-style: italic;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 70%;
+    margin: 0 0 0 20px
+}
+
+.about-text {
+    color: #fff!important
+}
+
+@media screen and (max-width:992px) {
+    .page-banner-text-right,
+    .page-banner2 {
+        background: #000!important
+    }
+    .privacy-note {
+        display: block;
+        max-width: 100%;
+        margin: 20px 0
+    }
+}
+
+@media screen and (max-width:767px) {
+    .page-banner3 .text {
+        margin: 0
+    }
+    .horizontal-align h2 {
+        text-align: left!important;
+        padding-top: 60px;
+        padding-right: 15px;
+        padding-left: 15px
+    }
+    .page-banner-video {
+        height: auto
+    }
+    .vertical-align>.wrapper {
+        display: block
+    }
+    .module-title-content h2 {
+        font-size: 40px
+    }
+    .module-infographs .image-wrapper {
+        margin-bottom: 50px
+    }
+    .module-infographs {
+        padding: 100px 0!important
+    }
+}
+
+@media screen and (max-width:991px) {
+    #skin_cube,
+    .page-banner-text-right .vertical-align,
+    .page-banner-video,
+    .page-banner2 .vertical-align,
+    .page-banner3 .vertical-align,
+    .que-form {
+        height: auto
+    }
+    #skin_cube {
+        display: block;
+        max-width: 100%;
+        margin: 15px 0
+    }
+    .page-banner-text-right .text,
+    .page-banner2 .text,
+    .page-banner3 .text {
+        margin: auto!important
+    }
+    .image-wrapper {
+        padding: 15px
+    }
+    .page-banner-text-right .vertical-align,
+    .page-banner2 .vertical-align,
+    .page-banner3 .vertical-align {
+        padding: 30px 15px
+    }
+    #skinte_bg_68 {
+        display: none
+    }
+    #skinte_bg_75 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        object-fit: cover
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .page-banner .vertical-align {
+        height: 200px
+    }
+}
+
+@media screen and (min-width:1301px) and (max-width:1900px) {
+    .page-banner .vertical-align {
+        height: 300px
+    }
+}

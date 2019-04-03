@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div sticky class="sub-navigation ir-navigation">
+    
+        <nav class="collapse sb-nav clearfix" id="sub-navigation">
+            <h3 class="hidden-sm hidden-xs"> <a routerLink="/news-media/in-the-news">News & Media</a> </h3>
+            <ul>
+                <li> <a routerLink="/news-media/in-the-news" routerLinkActive="active-link">In the News</a> </li>
+                <li> <a routerLink="/news-media/press-releases" routerLinkActive="active-link">Press Releases</a> </li>
+                <li> <a routerLink="/news-media/events" routerLinkActive="active-link">Events</a> </li>
+                <li> <a routerLink="/news-media/scientific-communications" routerLinkActive="active-link">Scientific Communications</a> </li>
+            </ul>
+        </nav>
+    
+</div>
+<div class="page-banner overlay video">
+    <div class="vertical-align">
+        <img src="./assets/stock-data-assets/stockData_hero.jpg" id="stock_bg">
+        <div class="wrapper text">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="bounceInUp">Events</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id='all_events'>
+    <h3>Upcoming Events</h3>
+    <div id="futureDiv"></div>
+    <h3 style="padding-top:75px">Past Events</h3>
+    <div id='pastDiv'></div>
+
+</div>
+
+<app-footer></app-footer>

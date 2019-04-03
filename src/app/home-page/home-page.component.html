@@ -1,0 +1,264 @@
+<app-header></app-header>
+<div class="page-banner  home-hero video">
+    <div id="home_bg" class="home-hero-wrapper overlay" data-vide-bg="{&quot;mp4&quot;: &quot;./assets/home-assests/01_platform_rens/platform_bg.mp4&quot;}" data-vide-options="loop: false, muted: true, playbackRate: 0.5, autoplay: true, position: 0% 0%">
+        <div class="container-fluid">
+            <div class="vertical-align">
+                <div class="wrapper">
+                    <div class="">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="text" data-aos="slide-right" data-aos-once="true">
+                                <h2>Functionally-Polarized Tissue</h2>
+                                <p>At PolarityTE, our revolutionary platform is being developed to induce cell and tissue polarity, creating uniquely functional tissue to mirror natural development in the human body.</p>
+                                <a routerLink="/platform" class="btn" style='text-shadow: none;'>View Our Platform</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="home_img_bg" class="home-hero-wrapper overlay" style=" background: url(./assets/home-assests/01_platform_rens/platform_072.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;">
+        <div class="container-fluid">
+            <div class="vertical-align">
+                <div class="wrapper">
+                    <div class="">
+                        <div class="col-sm-6">
+                            <div class="text" data-aos="slide-right" data-aos-once="true">
+                                <h2>Functionally-Polarized Tissue</h2>
+                                <p>At PolarityTE, our revolutionary platform is being developed to induce cell and tissue polarity, creating uniquely functional tissue to mirror natural development in the human body.</p>
+                                <a href="/platform" class="btn">View Our Platform</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="module-overlap-image dark" style=" background: url(./assets/home-assests/02_skinte_assets/gridRen.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;">
+    <div class="container-fluid">
+        <div class="">
+            <div class="col-md-12 col-lg-7 skinte-image">
+                <div class="image-wrapper center" data-aos="slide-right" data-aos-once="true">
+                    <img src="./assets/home-assests/02_skinte_assets/skinTE_box.png" alt="SkinTE"> </div>
+            </div>
+            <div class="col-md-12 col-lg-5">
+                <div class="image-wrapper" data-aos="slide-left" data-aos-once="true">
+                    <img src="./assets/home-assests/02_skinte_assets/steSyringe_transBg.png" alt="">
+                    <span class="caption">*Volume will vary with treatment needs</span>
+                </div>
+                <div class="text" data-aos="slide-left" data-aos-once="true">
+                    <h2>Delivering Truly Regenerative Medicine</h2>
+                    <p>PolarityTE develops full-thickness hair-bearing skin for treatment of burns, wounds and scars with launch product SkinTE.
+                    </p>
+                    <a style="min-width:230px" [routerLink]="['/products/skinTE-patients']" class="btn">SkinTE For Patients</a>
+                    <a style="min-width:230px" [routerLink]="['products/skinTE-providers']" class="btn">SkinTE For Providers</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="cellphone-video" class="module-home dark border-module" (appear)="onAppear(rtaBg)">
+    <video id='rta_bg' #rtaBg poster="./assets/home-assests/04_rta_bg/rta_047.jpg" muted>
+                            <source src="./assets/home-assests/04_rta_bg/rta_bg.mp4" type="video/mp4">
+                    
+                          </video>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-sm-offset-6">
+                <div class="text" data-aos="slide-left" data-aos-once="true">
+                    <h2>PolarityTE Real-Time Assistance for Providers</h2>
+                    <p>PolarityTE has created the PolarityTE Real-Time Assistant (RTA) application to enhance service and communication about our products with healthcare providers.</p>
+                    <div class="inline-btn">
+                        <a href="https://rta.polarityte.com/" class="btn" target="_blank">Login to web app</a>
+                        <a routerLink='products/rta' class="btn">Learn More</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="module-home fixed-bg dark-xs overlay overlay-xs" style=" background: url(./assets/home-assests/03_partner_bg/partner_bg.jpg); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;">
+    <div class="container-fluid">
+        <div class="">
+            <div class="col-sm-12 col-md-6 offset-md-6">
+                <div class="text" data-aos="slide-left" data-aos-once="true">
+                    <h2>Help Us Revolutionize Biomedical Technology</h2>
+                    <p>We are looking to partner with people/companies who share our drive and ambition to change the landscape of medicine.</p>
+                    <a routerLink="partners" class="btn">Partner with Us </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="module-home-news ">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content-box news" data-aos="fade-up" data-aos-once="true">
+                    <div class="text">
+                        <h2>Latest News</h2>
+                        <div class="news-item media js-same-height" style="min-height: 180px;" *ngFor="let recent  of most_latest| slice:0:1;">
+                            <div class="date">
+                                {{recent.date}}
+                            </div>
+                            <h4>
+                                <a href={{recent.href}} class="media-heading" target="_blank">{{recent.title}}</a>
+                            </h4>
+                        </div>
+                        <div>
+                            <a id="news_btn" routerLink="/news-media/in-the-news" class="btn">View All News</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="content-box press-releases" data-aos="fade-up" data-aos-once="true">
+                    <div class="text">
+                        <h2>Latest Press Release</h2>
+                        <div id='home_press' style="min-height: 180px;">
+                            <div id="LibDiv1"></div>
+                        </div>
+                        <div>
+                            <a routerLink='news-media/press-releases' style="min-width:230px;" class="btn ">View All Press Releases</a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="module-home-ir-wrapper wow fadeIn">
+    <div id="home-ir-video " class="module-home-ir dark " style="background: url(./assets/home-assests/06_stock_bg/stock_bg_00072.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover; ">
+        <div class="container">
+            <div class="">
+                <div class="col-lg-12 ">
+                    <div class="module-info-home quote-box" data-symbol="PTE">
+                        <div class="">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="stock-section">
+                                    <span class="value-title">Stock Information</span>
+                                    <span class="value">PolarityTE, Inc.</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 last-column">
+                                <div class="stock-section">
+                                    <span class="value-title">Date - Time</span>
+                                    <span class="value"><span class="meta time"><time style="font-size:20px">{{LastDate}} • {{LastTime}} EDT • Quote delayed 20 minutes</time></span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="col-sm-12 col-md-4 ">
+                                <div class="stock-section symbol">
+                                    <span class="value-title">Market/Symbol</span>
+                                    <span class="value">{{Exch}}: {{Ticker}}</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 ">
+                                <div class="stock-section price">
+                                    <span class="value-title">Price</span>
+                                    <span class="value">{{LastPrice}}</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 ">
+                                <div class="stock-section change down">
+                                    <span class="value-title">Change</span>
+                                    <span class="value">
+                                                <span class="eqicon-change-02"></span>
+                                    <span class="number">{{Change}}</span>
+                                    <span class="percent">({{ChangePercent}})</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="col-sm-12 col-md-4 ">
+                                <div class="stock-section volume">
+                                    <span class="value-title">Volume</span>
+                                    <span class="value">{{Volume}}</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 ">
+                                <div class="stock-section day-low-high day-range">
+                                    <span class="value-title">Day Range</span>
+                                    <span class="value">{{DayLow}} -{{DayHigh}}</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 ">
+                                <div class="stock-section week-low-high week-range">
+                                    <span class="value-title">52 Week Range</span>
+                                    <span class="value">{{YearLow}} - {{YearHigh}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a style="min-width:230px" routerLink='/investor/overview' class="btn">View Investor Relations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="module-home-presentation-wrapper ">
+    <div class="module-home-presentation dark " data-vide-bg="{&quot;mp4&quot;: &quot;./assets/home-assests/07_presentation_rens_looping/presentation.mp4&quot;}" data-vide-options="loop: true, muted: true, autoplay: true, position: 100% 100%">
+        <div class="container ">
+            <div class="text ">
+                <h2 style="text-shadow: 0 0 20px #E8C1F2">Investor Presentation</h2>
+                <div class="dropdown">
+                    <button class="btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Download
+              <span class="caret "></span>
+            </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="./assets/home-assests/07_presentation_rens_looping/pte_iDeck_031119_FINAL_web.pdf" target="_blank">PDF</a>
+                        </li>
+                        <li>
+                            <a href="./assets/home-assests/07_presentation_rens_looping/pte_iDeck_031119_FINAL_1080p_LITE2.mp4" target="_blank">MP4</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button id="presentation" type="submit" class="btn" (click)="openModal('custom-modal-1')">View Presentation</button>
+
+                <div id="slider"></div>
+                <jw-modal-presentation id="custom-modal-1" style="display:none; ">
+
+                    <button type="submit" class="textright close" (click)="closeModal('custom-modal-1');">X</button>
+
+                    <div id="thumbnail-slider">
+                        <div class="inner">
+                            <div class="prev" onClick="mcThumbnailSlider.prev()"><span class="sr-only">Prev</span><span class="glyphicon glyphicon-menu-left"></span></div>
+                            <ul>
+                                <li *ngFor="let slide of reviews">
+                                    <a class="thumb" href="{{slide.url}}"></a>
+                                </li>
+                            </ul>
+                            <div class="next" onClick="mcThumbnailSlider.next()"><span class="sr-only">Next</span><span class="glyphicon glyphicon-menu-right"></span></div>
+                        </div>
+                    </div>
+                </jw-modal-presentation>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<app-footer></app-footer>

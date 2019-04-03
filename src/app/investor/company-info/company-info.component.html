@@ -1,0 +1,130 @@
+<app-header></app-header>
+<app-sub-header [subNavArr]="dataSrc[4].children" [subNavArr2]='dataSrc[4]'></app-sub-header>
+<div id="company-page-banner" style="background: url(./assets/companyInfo-assets/companyInfoOverview.banner.jpg);background-repeat: no-repeat;background-size: cover;">
+    <div class="vertical-align">
+        <div class="wrapper text">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="bounceInUp">{{heading}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row company-info">
+    <div class="col-lg-3 col-md-12 col-sm-12 sidebar-nav" style="background-position: center;background-size: cover;" [style.background-color]='black' [style.background-image]="'url(' + removeAsideImage + ')'">
+        <nav class="sb-nav">
+            <ul>
+                <li class="sidebar-title">
+                    <h3>Company Information</h3>
+                </li>
+                <li><a (click)='openoverview()' [style.color]="fonts_color_over">Overview</a></li>
+                <li><a (click)='openmanagement()' [style.color]="fonts_color_mngmnt">Management Team</a></li>
+                <li><a (click)='openfaq()' [style.color]="fonts_color_faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-lg-9 col-md-12 col-sm-12 js-same-height active">
+        <div class="main-content clearfix" *ngIf="overview" style="background: url(./assets/companyInfo-assets/companyProfileBG.jpg);background-size: cover;">
+            <h1 class="sr-only">Company Information</h1>
+            <div class="ir-module company-overview">
+                <div class="header">
+                    <h2 class="icon-bg-overview">Company Profile</h2>
+                </div>
+                <div class="text">
+                    <p>PolarityTE is a commercial-stage biotechnology and regenerative biomaterials company focused on transforming the lives of patients by discovering, designing and developing a range of regenerative tissue products and biomaterials for
+                        the fields of medicine, biomedical engineering and material sciences. The PolarityTE platform technology begins with a small piece of the patient's own, or autologous, healthy tissue, rather than artificially manipulated individual
+                        cells. From this small piece of healthy autologous tissue, the company creates an easily deployable, dynamic and self-propagating product designed to enhance and stimulate the patient's own cells to regenerate the target tissues.
+                        Rather than manufacturing with synthetic and foreign materials within artificially engineered environments, PolarityTE manufactures with the patient's own tissue and uses the patient's own body to support the regenerative process
+                        to create the same tissue from which it was derived. PolarityTE's innovative method is intended to promote and accelerate growth of the patient's tissues to undergo a form of effective regenerative healing.</p>
+                    <div class="inline-btn">
+                        <a routerLink="/about/management-team" class="btn" style="min-width:260px">View Management Team</a> </div>
+                </div>
+            </div>
+            <div class="ir-module presentation-module">
+                <div class="media" style="display: block;">
+                    <div class="header">
+                        <h2>Latest Investor Presentation</h2>
+                    </div>
+                    <div class="media-left">
+                        <div class="dropdown"> <a class="btn" style="color: #ffffff;" dropdown-toggle='' data-toggle='dropdown' aria-expanded="false"> Download <span class="caret"></span> </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./assets/home-assests/07_presentation_rens_looping/pte_iDeck_031119_FINAL_web.pdf" target="_blank">PDF</a></li>
+                                <li><a href="./assets/home-assests/07_presentation_rens_looping/pte_iDeck_031119_FINAL_1080p_LITE2.mp4" target="_blank">MP4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="media-right"> <img src="./assets/companyInfo-assets/computer.png" alt="Investor Presentation" width="411" height="245"> </div>
+                </div>
+            </div>
+            <div class="ir-module contact-module">
+                <h2>Contact Information</h2>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-6" style="flex:auto">
+                        <p> <strong>Investor Relations</strong><br>Rich Haerle<br>VP of Investor Relations &amp; Corporate Strategy<br>T: <a href="tel:385-831-5284">385-831-5284</a> <br><a href="mailto:ir@polarityte.com">ir@polarityte.com</a></p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6" style="flex:auto">
+                        <p> <strong>Transfer Agent</strong><br>Equity Stock transfer<br>237 W 37th St,&nbsp;Suite 602<br>New York,&nbsp;NY 10018<br>T: <a href="tel:212-575-5757">212-575-5757</a> <br>F: <a href="tel:347-584-3644">347-584-3644</a> </p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6" style="flex:auto">
+                        <p> <strong>Legal Counsel</strong><br>Parsons Behle &amp; Latimer <br>201 South Main Street,&nbsp;Suite 1800<br>Salt Lake City,&nbsp;UT 84111<br>T: <a href="tel:801-532-1234">801-532-1234</a> </p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6" style="flex:auto">
+                        <p> <strong>Company Contact</strong><br>PolarityTE, Inc.<br>123 North Wright Brothers Drive,<br>Salt Lake City,&nbsp;UT 84116 </p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6" style="flex:auto">
+                        <p> <strong>Auditor</strong><br>EisnerAmper LLP </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="main-content clearfix" style="background-color: #000000;" *ngIf="management">
+            <div class="col-md-12 col-lg-12">
+                <div class="panel-group text" id="team">
+                    <div class="member" *ngFor="let item of teamdata_Mngmnt">
+                        <div class="image"> <img src={{item.headshot}} alt="{{item.fullName}}"> </div>
+                        <div class="info">
+                            <h2>{{item.fullName}}</h2>
+                            <p class="title">{{item.position}}</p>
+                        </div>
+                        <div class="member-info" id="member-bio-1125">
+                            <div class="member-description">
+                                <p>{{item.longBio}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="questions" style="background: url(./assets/companyInfo-assets/companyProfileBG.jpg);background-size: cover;" *ngIf="faq">
+            <div class="main-content clearfix">
+                <div class="toggle" *ngFor="let item of queAns;let i=index">
+                    <div class="que-lists">
+                        <div id='borderonly'>
+                            <div class="vertical-align" (click)='panelExpanded[i]=!panelExpanded[i]'>
+                                <div class="wrapper">
+                                    <div class="row">
+                                        <div class="col-md-12"> <span class="glyphicon" style="color: #ffffff" [class.glyphicon-plus]="panelExpanded[i] || expandall==false " [class.glyphicon-minus]="panelExpanded[i] || expandall==true "></span>
+                                            <p style="display: inline;padding-left:5px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">{{item.que}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ans-lists" *ngIf="panelExpanded[i]">
+                                <div>
+                                    <div class="vertical-align">
+                                        <div class="wrapper">
+                                            <div class="row"> <pre>{{item.ans}}</pre> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,162 @@
+<app-header></app-header>
+<div id="privacy-page-banner" style="background: url(./assets/privacy-assets/privacy-banner.jpg);background-position: 50% 50%;background-repeat: no-repeat;
+background-size: cover;">
+    <div class="container">
+        <div class="vertical-align">
+            <div class="wrapper text">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="bounceInUp" style="color:#000">Site Map</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id='main' class='main'>
+    <section class="polarityinfo">
+        <ul class='section-list list list-nobullet'>
+            <li>
+                <section class="category-section">
+                    <h3>Home</h3>
+                    <ul class="list list-nobullet">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+
+                    </ul>
+                </section>
+            </li>
+            <li>
+                <section class="category-section">
+                    <h3>About</h3>
+                    <ul class="list list-nobullet">
+                        <li>
+                            <a routerLink="/about/overview">Overview</a>
+                        </li>
+                        <li>
+                            <a routerLink="/about/management-team">Management Team</a>
+                        </li>
+                        <li>
+                            <a routerLink="/about/board-of-directors">Board of Directors</a>
+                        </li>
+                        <li>
+                            <a routerLink="/about/clinical-board-of-advisors">Clinical Board of Advisors</a>
+                        </li>
+                        <li>
+                            <a routerLink="/about/values">Values</a>
+                        </li>
+                    </ul>
+                </section>
+            </li>
+            <li>
+                <section class="category-section">
+                    <h3>Platform</h3>
+                    <ul class="list list-nobullet">
+                        <li>
+                            <a routerLink="/platform">Platform</a>
+                        </li>
+
+                    </ul>
+                </section>
+            </li>
+            <li>
+                <section class="category-section">
+                    <h3>Products</h3>
+                    <ul class="list list-nobullet">
+                        <li>
+                            <a routerLink="/products/overview">Overview</a>
+                        </li>
+                        <li>
+                            <a routerLink="/products/skinTE-patients">SkinTE For Patients</a>
+                        </li>
+                        <li>
+                            <a routerLink="/products/skinTE-providers">SkinTE For Providers</a>
+                        </li>
+                        <li>
+                            <a routerLink="/products/osteoTE">OsteoTE</a>
+                        </li>
+                        <li>
+                            <a routerLink="/products/rta">RTA</a>
+                        </li>
+                    </ul>
+                </section>
+            </li>
+            <li>
+                <section class="category-section">
+                    <h3>Investor Relations</h3>
+                    <ul class="list list-nobullet">
+                        <li>
+                            <a routerLink="/investor/overview">Overview</a>
+                        </li>
+
+                        <li>
+                            <a routerLink="/investor/company-info">Company Information</a>
+                        </li>
+                        <li>
+                            <a routerLink="/investor/financial-info">Financial Information</a>
+                        </li>
+                        <li>
+                            <a routerLink="/investor/sec-filings">SEC Filings</a>
+                        </li>
+                        <li>
+                            <a routerLink="/investor/stock-data">Stock Data</a>
+                        </li>
+                        <li>
+                            <a routerLink="/investor/governance">Governance</a>
+                        </li>
+                        <li>
+                            <a routerLink="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </section>
+            </li>
+            <li>
+                <section class="category-section">
+                    <h3>News & Media</h3>
+                    <ul class="list list-nobullet">
+                        <li>
+                            <a routerLink="/news-media/in-the-news">In the News</a>
+                        </li>
+                        <li>
+                            <a routerLink="/news-media/press-releases">Press Releases</a>
+                        </li>
+                        <li>
+                            <a routerLink="/news-media/events">Events</a>
+                        </li>
+                        <li>
+                            <a routerLink="/email-alerts">Email Alerts</a>
+                        </li>
+                        <li> <a routerLink="/news-media/scientific-communications" routerLinkActive="active-link">Scientific Communications</a> </li>
+
+                    </ul>
+                </section>
+            </li>
+            <li>
+                <section class="category-section">
+                    <h3>Contact</h3>
+                    <ul class="list list-nobullet">
+                        <li><a routerLink="/contact" pageScroll [pageScrollSpeed]="3000" href='#row-contact-forms' (click)="goToContact('feedback')">Feedback</a></li>
+                        <li><a routerLink="/contact" pageScroll [pageScrollSpeed]="3000" (click)="goToContact('collaborate')" href='#row-contact-forms'>Collaborate</a></li>
+                        <li><a routerLink="/contact" pageScroll [pageScrollSpeed]="3000" href='#row-contact-forms' (click)="goToContact('investor')">Investor</a></li>
+                        <li><a routerLink="/contact" pageScroll [pageScrollSpeed]="3000" href='#row-contact-forms' (click)="goToContact('contact')">Contact HR</a></li>
+                        <li><a href="https://secure.ethicspoint.com/domain/media/en/gui/54731/index.html" target="_blank ">Report a Concern</a></li>
+                    </ul>
+                </section>
+            </li>
+            <li>
+                <section class="category-section">
+                    <h3>Careers</h3>
+                    <ul class="list list-nobullet">
+                        <li>
+                            <a href="/careers">Careers</a>
+                        </li>
+                    </ul>
+                </section>
+            </li>
+        </ul>
+    </section>
+
+</div>
+
+<app-footer></app-footer>

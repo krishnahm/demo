@@ -1,0 +1,52 @@
+<app-header></app-header>
+<app-sub-header [subNavArr]="dataSrc[4].children" [subNavArr2]='dataSrc[4]'></app-sub-header>
+<div class="page-banner overlay video">
+    <div class="vertical-align">
+
+        <img src="./assets/stock-data-assets/stockData_hero.jpg" id="stock_bg">
+        <div class="wrapper text">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="bounceInUp">Stock Data</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="border-bottom:33px solid #000000;margin: 0">
+    <div class="col-lg-3 col-md-12 col-sm-12 sidebar-nav" style="background: url(./assets/companyInfo-assets/leftSidebar.mask.jpg);background-position: center;background-size: cover;">
+        <nav class="sb-nav">
+            <ul>
+                <li class="sidebar-title">
+                    <h3>Stock Data</h3>
+                </li>
+                <li>
+                    <a (click)='openquote()' [style.color]="quotecolor">
+                        <span>Detailed Quote</span>
+                    </a>
+                </li>
+                <li>
+                    <a (click)='opencharts()' [style.color]="chartcolor">
+                        <span>Charts</span>
+                    </a>
+                </li>
+                <li>
+                    <a (click)='openhistorical()' [style.color]="historicalcolor">
+                        <span>Historical Data</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-lg-9 col-md-12 col-sm-12 js-same-height active" style="background: url(./assets/stock-data-assets/BG.jpg);background-position: center;background-repeat: no-repeat;background-size: cover;">
+        <div class="tab-content">
+            <h2>{{heading}}</h2>
+            <div id="b2iClientQuote" [style.display]="hidequote"></div>
+            <div>
+                <div id="chartdiv" style="height:700px;" [style.display]="hidecharts"></div>
+            </div>
+            <div id="HistoricalDiv" [style.display]="hidehistorical"></div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

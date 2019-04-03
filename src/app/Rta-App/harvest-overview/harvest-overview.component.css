@@ -1,0 +1,204 @@
+.btn {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    position: relative;
+    min-height: 1px;
+    flex-basis: calc(50% - 8px);
+    justify-content: center;
+    flex-direction: column;
+    padding: 2px 4px;
+    height: auto
+}
+
+.btn,
+.cta {
+    text-transform: uppercase
+}
+
+.tri-color {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row
+}
+
+.tri-color div:first-of-type {
+    background: #1f518f
+}
+
+.tri-color div {
+    background: #317fde;
+    height: 15px;
+    display: flex;
+    flex-basis: calc(33.33%);
+    justify-content: center;
+    flex-direction: column
+}
+
+.tri-color>* {
+    flex: 1 1 50%
+}
+
+.tri-color div:last-of-type {
+    background: #9ec9fd
+}
+
+.header {
+    border-bottom: solid 2px #317fde;
+    padding: 20px 0
+}
+
+.header h1 {
+    float: left;
+    margin: 0;
+    font-size: 40px;
+    color: #0070c9
+}
+
+.app-logo {
+    float: right
+}
+
+.header .app-logo img {
+    max-height: 48px
+}
+
+.main-content {
+    margin: 50px 0;
+    padding: 0 !important;
+    min-height: 0 !important
+}
+
+.module-slider {
+    padding: 0
+}
+
+h2,
+h2 a,
+h2 a:hover {
+    color: #000;
+    font-size: 40px
+}
+
+.module-slider .step .instruction {
+    background: #317fde;
+    text-align: center;
+    padding: 10px;
+    margin: 0 4px 4px
+}
+
+.module-slider .step .instruction h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700
+}
+
+.module-slider .previous-step {
+    float: left;
+    margin: 10px 4px;
+    font-size: 20px
+}
+
+.module-slider .previous-step .glyphicon {
+    position: relative;
+    top: 3px
+}
+
+.module-slider .next-step {
+    float: right;
+    margin: 10px 4px 4px;
+    font-size: 20px
+}
+
+.cta {
+    font-size: 13px;
+    color: #0070c9
+}
+
+a.cta:hover {
+    text-decoration: none;
+    color: #464646
+}
+
+.btn,
+.btn:active,
+.btn:focus,
+.btn:hover {
+    color: #fff
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings' !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.module-slider .step .step-images {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+}
+
+.module-slider .step .step-images .col img {
+    width: fit-content;
+    display: block;
+    margin: 0 auto
+}
+
+.module-slider .step .step-images .col {
+    display: flex;
+    flex-basis: calc(50% - 8px);
+    justify-content: center;
+    flex-direction: column;
+    margin: 4px
+}
+
+.module-slider .step .step-images>* {
+    flex: 1 1 50%;
+    flex-basis: 50%
+}
+
+@media only screen and (max-width:767px) {
+    .module-slider .step .step-images>* {
+        flex: 1 1 100%;
+    }
+}
+
+.btn:hover {
+    background: #000;
+    text-decoration: none
+}
+
+.btn {
+    background: #017eda;
+    border-radius: 1000px;
+    border: 0;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: .035em;
+    font-weight: 700;
+    line-height: 1;
+    min-width: 220px;
+    margin-bottom: 5px;
+    padding: 25px;
+    text-align: center;
+    transition: background .3s ease;
+    touch-action: manipulation;
+    cursor: pointer
+}
+
+@media only screen and (max-width:767px) {
+    .module-slider .step .step-images .col {
+        flex-basis: calc(100% - 8px)
+    }
+}

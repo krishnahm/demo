@@ -1,0 +1,187 @@
+<app-header></app-header>
+<app-sub-header [subNavArr]="dataSrc[2].children" [subNavArr2]='dataSrc[2]'>
+</app-sub-header>
+<div id="osteo-page-banner" style="clear:both;background-color: #000;">
+    <div class="vertical-align">
+        <img src="./assets/osteote-assets/ote_heroBanner_v68p.jpg" id='osteote_bg_68'>
+        <img src="./assets/osteote-assets/ote_heroBanner_v75p.jpg" id='osteote_bg_75'>
+    </div>
+</div>
+<div class="page-banner" style="position: relative;border-top: 5px solid #d18d27;background: url(./assets/osteote-assets/expectedLaunch.bg.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;">
+    <div class="vertical-align">
+        <div class="wrapper-text">
+            <div class="text">
+                <h2>Expected to Launch in Late 2018</h2>
+                <p>OsteoTE is an autologous—from the patient, for the patient—product intended for bone repair, reconstruction, replacement, supplementation and regeneration, including in the long bone, craniomaxillofacial, spine, dental, hand and foot/ankle
+                    markets. </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-banner-text-left" style="position: relative;border-top: 5px solid #90b9ef;background: url(./assets/osteote-assets/regenOfBone.bg.jpg);background-repeat: no-repeat;background-size: cover;">
+    <div class="row ">
+
+        <div class="col-sm-12 col-md-6 col-lg-5 offset-lg-1">
+            <div class="vertical-align ">
+                <div class="wrapper-text">
+                    <div class="text ">
+                        <h2>Regeneration of Bone in Critical Defects</h2>
+                        <img src='./assets/osteote-assets/regenOfBone_all.png' alt='regenOfBone'>
+                        <button style="margin-top: 25px" type="submit" class="btn" (click)="openModal('custom-modal-1')">See Figure Caption</button>
+                        <jw-modal id="custom-modal-1" style="display:none">
+                            <img src='./assets/osteote-assets/regenOfBone_all.png' alt='regenOfBone'>
+                            <p>(a.) Three dimensional (3-D) micro computed tomography (micro-CT) native cranial bone displaying pre-defect left parietal and right parietal bones of in vivo model system at timepoint TPDN. <br> (b.) Gross image of surgically-created,
+                                complete, bi-parietal critical sized defects of both the left and right parietal bones within the in vivo model system at timepoint T0.<br> (c.) 3-D micro-CT of surgically-created, complete (full-thickness), bi-parietal
+                                critical sized defects of both the left and right parietal bones within the in vivo model system. ① Indicates the right parietal bone region with 8 mm diameter defect at timepoint T0 which was un-treated and maintained
+                                as the defect control throughout study. ② Indicates the left parietal bone region with 8 mm defect which was treated with the osseous-derived CLICSAM substrate and maintained as the defect-treated control throughout the
+                                study.
+                                <br> (d.) 3-D micro-CT of surgically-created, complete, bi-parietal critical sized defects of both the left and right parietal bones within the in vivo model system at 4 weeks post-procedure and intervention (timepoint
+                                TPPI-4WK). ❶Indicates the un-treated right parietal bone region (defect control) at 4 weeks. ❷ Indicates the treated left parietal bone region (CLICSAM treatment) at 4 weeks. <br> (e.) Depicts the relative margins of the
+                                primary bi-parietal defects (dotted circles) at time point T0; ROI (broken line box) indicates zoomed comparison of 4 weeks post-treatment defects of 3-D micro-CT and correlative 3-D thermal spectrum colored surface plot
+                                indicating relative surface depth and volumetric contour. Abbreviations: Pre-defect Native Timepoint (TPDN): timepoint at which native skull was imaged prior to creation of defect; Defect Native Timepoint (T0): timepoint
+                                at which complete (full-thickness) 8 mm critically sized defects were created in parietal skull regions; Post-procedure and intervention at 4 weeks timepoint (TPPI-4WK): timepoint at which 4 weeks have passed since the
+                                defects were created +/- treated with intervention.
+                            </p>
+                            <button style="margin-top: 25px;" type="submit" class="btn" (click)="closeModal('custom-modal-1');">Close</button>
+
+                        </jw-modal>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='col-sm-12 col-md-6 col-lg-5 offset-lg-1'>
+            <div class="vertical-align ">
+                <div class="wrapper-text">
+                    <img src="./assets/osteote-assets/bunnies.png" alt="bunnies"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-banner-center" style="position: relative;border-top: 5px solid #298327;background: url(./assets/osteote-assets/polarizedInterfaces.bg.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;">
+    <div class="vertical-align">
+        <div class="wrapper-text">
+            <div class="text">
+                <h2>PolarityTE Interfaces Drive Vascularized Osteogenesis</h2>
+                <p>Comparing OsteoTE™ to Native Bone and other Products.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-5 offset-lg-1">
+                <img src='./assets/osteote-assets/greenPic.png'>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src='./assets/osteote-assets/pinkBluepics.png'>
+                <div style="padding-top:40px;">
+                    <img src='./assets/osteote-assets/osteoTE.png'>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-banner-text-left" style="position: relative;border-top: 5px solid #76b191;background: url(./assets/osteote-assets/molecularFingerprints.bg.jpg);background-repeat: no-repeat;background-size: cover;">
+    <div class="row ">
+        <div class='col-sm-12 col-md-6 col-lg-5 offset-lg-1'>
+            <div class="vertical-align ">
+                <div class="wrapper-text">
+                    <img class='right_side' src="./assets/osteote-assets/slides.png" alt="slides"> </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-5 offset-lg-1">
+            <div class="vertical-align ">
+                <div class="wrapper-text">
+                    <div class="text">
+                        <h2>Molecular Fingerprints Drive Functional Tissues</h2>
+                        <p>Integrative Angiogenesis and Osteogenesis Correlate this with Functional Outcomes and Tissue Fingerprints</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="page-banner-last" style="position: relative;border-top: 5px solid #5b64ae;background: url(./assets/osteote-assets/regenOfComplex.bg.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;">
+
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 offset-lg-1">
+            <div class="vertical-align" style="height:auto">
+                <div class="wrapper-text">
+
+                    <div class="text">
+                        <h2>The Regeneration of Complex, Hierarchically-Organized Bone</h2>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5 offset-lg-1">
+                    <div class="vertical-align ">
+                        <div class="wrapper-text">
+                            <div class="text">
+                                <img style='width: 400px;' src='./assets/osteote-assets/osteoteSpineStudiesUndersay.png' alt='osteoteSpineStudiesUndersay'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-5 offset-lg-1">
+
+            <img src='./assets/osteote-assets/osteoteCMF-longBonePreClinComplete2.png' alt='osteoteCMF-longBonePreClinComplete'>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-5">
+            <img src='./assets/osteote-assets/preclinicalModel.png' alt="preclinicalModel">
+        </div>
+    </div>
+</div>
+<div class='que-form'>
+    <div class='module-form'>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-12 col-md-offset-1">
+                    <div class="heading-center">
+                        <h1>Still have more questions?</h1>
+                        <h1>Tell us more below.</h1>
+                    </div>
+                    <form ngNoForm action="https://www.b2i.us/profiles/investor/FormHandler.asp" target="_self" method="POST">
+                        <input type="hidden" name="BzID" value="2361" />
+                        <input type="hidden" name="FormKey" value="24s7c6o3U2V9C3X" />
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-6 ">
+                                <div class="form-group"><label for="first_name_f">First&nbsp;Name&nbsp;<span
+                                   aria-required="true" class="required">(required)</span></label><input required class=" form-control s" id="first_name_f" maxlength="40" minlength="2" name="firstname" type="text" value=""></div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 ">
+                                <div class="form-group"><label for="last_name_f">Last&nbsp;Name&nbsp;<span
+                                   aria-required="true" class="required">(required)</span></label><input required class=" form-control lettersonly" id="last_name_f" maxlength="40" minlength="2" name="lastname" type="text" value=""></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-12 col-md-6"><label for="email_f">Email&nbsp;<span
+                                 aria-required="true" class="required">(required)</span>
+                            </label><input required class=" form-control" id="email_f" name="email" type="email" value=""></div>
+                        </div>
+                        <div class="form-group"><label for="message_f">Message&nbsp;<span 
+                              aria-required="true" class="required">(required)</span> </label><textarea aria-required="true" class=" form-control" cols="30" id="message_f" name="comments" rows="6"></textarea></div>
+                        <div cols="30" class="form-group submit-group col-sm-12 col-md-6 ">
+
+                            I am not a robot, to verify please answer 8+7 is equal to <input required name="Challenge" type="text" value="" class="form-control" />
+                        </div>
+                        <br>
+                        <div class=" col-sm-12 submit-group">
+                            <button class="btn " type="submit">Submit</button>
+                            <p class="privacy-note">We respect your privacy. We do not sell, rent, or loan any information to any third party. Any information you give us is held with the utmost care and security, and will be used only in ways to which you have consented.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

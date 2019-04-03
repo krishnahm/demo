@@ -1,0 +1,30 @@
+<app-header></app-header>
+<app-sub-header [subNavArr]="dataSrc[0].children" [subNavArr2]='dataSrc[0]'>
+</app-sub-header>
+<div class="pageTeamProfile" *ngFor="let item of individual_list">
+    <div style="background:url('./assets/management-assets/01_hero/blueSwirl_bio_bg.jpg');background-repeat: no-repeat; background-position: center; background-size: cover;" class="hero-wrapper"> <img [src]="item.headshot" alt="{{item.fullName}}">
+        <div class="outerWrapper hero profile">
+            <div class="innerWrapper">
+                <div class="hero-content-wrapper">
+                    <div class="hero-content">
+                        <h1>{{item.fullName}}</h1>
+                        <h2>{{item.position}}</h2>
+                    </div>
+                    <a>
+                        <div class="hero-invisible-click"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="border-bottom: 0px none" class="outerWrapper-textModule ">
+        <div style="padding-bottom: 0px;" class="innerWrapper textItemSingle align-left">
+            <div>
+                <p>{{item.longBio}}</p>
+            </div>
+        </div>
+        <div class="innerWrapper"> <a style="cursor: pointer;" (click)="goback()" class="btn" style="color: #fff
+            ">Go Back</a> </div>
+    </div>
+    <app-footer></app-footer>
+</div>

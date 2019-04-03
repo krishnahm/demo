@@ -1,0 +1,429 @@
+.stick {
+    position: fixed;
+    top: 0
+}
+
+.row {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap
+}
+
+@media screen and (min-width:576px) {
+    .row>div {
+        -webkit-flex: 1
+    }
+}
+
+.page-banner .vertical-align {
+    height: 400px
+}
+
+.page-banner {
+    position: relative;
+    overflow: hidden;
+    z-index: 0
+}
+
+.vertical-align {
+    display: table;
+    width: 100%;
+    table-layout: fixed
+}
+
+#contact_bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover
+}
+
+#contact_img_bg {
+    display: none
+}
+
+.module-contact-forms,
+.page-banner {
+    border-bottom: 33px solid #000
+}
+
+.contact-forms {
+    padding: 160px 85px 300px
+}
+
+input:focus,
+textarea:focus {
+    outline: 0!important;
+    border: 2px solid #d87f45
+}
+
+.page-banner .text {
+    text-align: center;
+    padding: 32px 0
+}
+
+.page-banner-center .text {
+    text-align: center;
+    padding-top: 150px
+}
+
+.vertical-align>.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%
+}
+
+.page-banner:not(.home-hero) h2 {
+    color: #fff
+}
+
+.page-banner h2 {
+    font-size: 50px;
+    margin-bottom: 0
+}
+
+h2,
+h2 a {
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: none
+}
+
+h2 {
+    margin: 0 0 20px
+}
+
+.building-map {
+    height: 550px
+}
+
+.address,
+.address b,
+.contact-details,
+.contact-details a,
+.contact-details b {
+    font-size: 20px!important;
+    color: #fff;
+    display: inline-block;
+    text-align: left
+}
+
+.contact-details a:hover {
+    text-decoration: underline!important
+}
+
+.contact-details,
+.central {
+    margin-left: 34px
+}
+
+.contact-location-card .vertical-align {
+    background: #5fbe67;
+    position: relative;
+    z-index: 100;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, .2);
+    height: 100px
+}
+
+.module-wrapper+.module-wrapper {
+    padding-top: 0
+}
+
+.module-contact-forms .contact-forms form label,
+h5,
+label {
+    color: #fff
+}
+
+.module-contact-forms {
+    background: #27272b
+}
+
+.module-contact-forms .form-tabs {
+    background: #016bd0;
+    padding: 95px 0;
+    border-bottom-right-radius: 25px
+}
+
+.module-contact-forms .form-tabs h3 {
+    font-size: 30px;
+    padding: 0 15px;
+    text-align: center;
+    font-weight: 400;
+    max-width: 250px;
+    margin: 0 auto 85px;
+    line-height: 1.3;
+    color: #fff
+}
+
+.nav1 {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0
+}
+
+.nav1>li {
+    display: block
+}
+
+.module-contact-forms .form-tabs .nav1 li.active a {
+    background: #27272b;
+    color: #fff;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .3)
+}
+
+.module-contact-forms .form-tabs .nav1 li a {
+    display: block;
+    padding: 0 20px 0 25%;
+    background: #99c5ff;
+    color: #000;
+    height: 93px
+}
+
+.nav1>li>a {
+    position: relative
+}
+
+.module-contact-forms .contact-forms .tab-pane {
+    max-width: 1000px
+}
+
+.module-contact-forms .form-tabs .nav1 li a::before {
+    content: '';
+    width: 0;
+    height: 93px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.module-contact-forms .form-tabs .nav1 li.active a svg {
+    fill: #fff
+}
+
+.module-contact-forms .form-tabs .nav1 li a svg {
+    position: absolute;
+    width: 25px;
+    top: 50%;
+    margin-left: -40px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%)
+}
+
+.module-contact-forms .form-tabs .nav1 li+li {
+    margin-top: 50px
+}
+
+.module-contact-forms .form-tabs .nav1 li {
+    margin: 0;
+    padding: 0
+}
+
+.module-contact-forms .form-tabs .nav1 li.active a>span {
+    color: #fff
+}
+
+.module-contact-forms .form-tabs .nav1 li a>span {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 80%
+}
+
+.form-group {
+    margin-bottom: 15px
+}
+
+.module-contact-forms .contact-forms {
+    background: #27272b
+}
+
+.module-contact-forms .contact-forms h2 svg {
+    display: inline-block;
+    margin-right: 6px;
+    width: 50px;
+    fill: #99c5ff
+}
+
+.module-contact-forms .contact-forms form label .required {
+    color: #898989
+}
+
+.module-contact-forms .contact-forms h2 {
+    font-size: 60px;
+    font-weight: 400;
+    color: #99c5ff;
+    margin-bottom: 40px
+}
+
+.module-contact-forms .contact-forms h3 {
+    font-weight: 700;
+    font-size: 28px
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark li,
+.dark p {
+    color: #fff
+}
+
+.module-contact-forms .contact-forms .tab-pane>p {
+    font-size: 19px
+}
+
+.module-contact-forms .contact-forms form {
+    max-width: 865px;
+    margin-top: 50px
+}
+
+.module-contact-forms .contact-forms form .submit-group {
+    margin-top: 30px
+}
+
+.btn:hover {
+    background: #fff!important;
+    color: #000;
+    text-decoration: none
+}
+
+.btn {
+    min-width: 196px;
+    color: #fff;
+    border: 2px solid #fff;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    padding-top: 16px!important;
+    padding-bottom: 16px!important;
+    border-radius: 1000px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    background: 0 0;
+    margin: 0 20px 0 0
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+.module-contact-forms .contact-forms .privacy-note {
+    line-height: 1.3;
+    font-style: italic;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 70%;
+    margin: 0
+}
+
+@media screen and (max-width:841px) {
+    .address,
+    .contact-details {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .module-contact-forms .form-tabs .nav1 li {
+        float: left;
+        width: 25%
+    }
+    .module-contact-forms .form-tabs .nav1 li a::before {
+        display: none
+    }
+    .module-contact-forms .form-tabs .nav1 li a {
+        height: auto;
+        text-align: center;
+        padding: 15px 12px;
+        min-height: 150px;
+        font-size: 12px
+    }
+    .module-contact-forms .form-tabs .nav li a svg,
+    .module-contact-forms .form-tabs .nav1 li a svg {
+        display: block;
+        margin: 0 auto 10px;
+        transform: none;
+        position: relative
+    }
+    .module-contact-forms .form-tabs .nav1 li a>span {
+        max-width: 100%
+    }
+    .module-contact-forms .form-tabs .nav1 li+li {
+        margin-top: 0
+    }
+}
+
+@media screen and (max-width:991px) {
+    .module-contact-forms .tab-pane {
+        padding: 15px 30px
+    }
+    .module-contact-forms .contact-forms .privacy-note {
+        display: block;
+        max-width: 100%;
+        margin-top: 20px
+    }
+    .module-contact-forms .form-tabs {
+        padding-bottom: 0;
+        border-bottom-right-radius: 0
+    }
+    .module-contact-forms .contact-forms {
+        padding: 50px 15px
+    }
+    .module-contact-forms .contact-forms h2 {
+        font-size: 30px
+    }
+    .contact-location-card .vertical-align {
+        height: auto;
+        padding: 30px 15px
+    }
+    #contact_img_bg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0
+    }
+    #contact_bg {
+        display: none
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .page-banner .vertical-align {
+        height: 200px
+    }
+}
+
+@media screen and (max-width:450px) {
+    ul.nav1 li span {
+        font-size: 11px!important
+    }
+}
+
+#message_f {
+    height: 165px!important
+}
+
+.tab-pane svg {
+    height: 50px
+}

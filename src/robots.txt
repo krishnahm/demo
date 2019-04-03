@@ -1,0 +1,8 @@
+Sitemap: https://www.polarityte.com/sitemap.xml
+User-agent: *
+Disallow: /thank-you/
+Disallow: /akamai/akamai-sureroute-test-object.html
+Disallow: /not-found/
+Noindex: /thank-you/
+Noindex: /not-found/
+Noindex: /akamai/akamai-sureroute-test-object.html

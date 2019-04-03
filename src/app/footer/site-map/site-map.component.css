@@ -1,0 +1,148 @@
+#privacy-page-banner {
+    position: relative;
+    overflow: hidden;
+    z-index: 0
+}
+
+#privacy-page-banner,
+#privacy-page-banner .vertical-align {
+    height: 400px
+}
+
+#privacy-page-banner h2 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0 0 20px;
+}
+
+.vertical-align {
+    display: table;
+    width: 100%;
+    table-layout: fixed
+}
+
+.vertical-align>.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%
+}
+
+#privacy-page-banner h2 {
+    color: #000000;
+}
+
+h2,
+h2 a {
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: none
+}
+
+@media screen and (max-width:1200px) {
+    #privacy-page-banner,
+    #privacy-page-banner .vertical-align {
+        height: 200px
+    }
+}
+
+.main {
+    margin: 65px 0;
+}
+
+.polarityinfo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+
+.section-list {
+    -webkit-columns: 3 auto;
+    columns: 3 auto;
+    margin: 10px 0 0;
+    padding-bottom: 25px;
+}
+
+.category-section {
+    display: inline-block;
+    margin-bottom: 26px;
+    vertical-align: top;
+    z-index: 1;
+    -webkit-column-span: 1;
+    column-span: 1;
+}
+
+.category-section h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.category-section h3,
+.category-section .list li {
+    padding-bottom: 7px;
+    padding-right: 40px;
+}
+
+.section-list {
+    -webkit-columns: 3 auto;
+    columns: 3 auto;
+    column-count: 3;
+    margin: 10px 0 0;
+    padding-bottom: 25px;
+}
+
+.list.list-nobullet {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list li a {
+    font-size: 18px;
+}
+
+.list li {
+    margin-top: 0;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #0070c9;
+}
+
+@media screen and (max-width:735px) {
+    .main {
+        margin: 45px 0;
+    }
+    .polarityinfo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 87.5%;
+    }
+    .section-list {
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    .category-section h3,
+    .category-section .list li {
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width:735px) and (max-width:1068px) {
+    .polarityinfo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 692px;
+    }
+    .category-section h3,
+    .category-section .list li {
+        padding-right: 0;
+    }
+}

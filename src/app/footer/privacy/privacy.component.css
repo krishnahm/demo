@@ -1,0 +1,77 @@
+#privacy-page-banner {
+    position: relative;
+    overflow: hidden;
+    z-index: 0
+}
+
+#privacy-page-banner,
+#privacy-page-banner .vertical-align {
+    height: 400px
+}
+
+#privacy-page-banner h2 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0 0 20px;
+}
+
+.vertical-align {
+    display: table;
+    width: 100%;
+    table-layout: fixed
+}
+
+.vertical-align>.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%
+}
+
+#privacy-page-banner h2 {
+    color: #000000
+}
+
+h2,
+h2 a {
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: none
+}
+
+.main-content h1,
+.main-content h2.title {
+    margin-bottom: 40px;
+    color: #0070c9;
+    font-size: 60px
+}
+
+.main-content {
+    padding: 50px 0
+}
+
+b,
+strong {
+    font-weight: 700
+}
+
+h2,
+p {
+    margin: 0 0 20px
+}
+
+@media screen and (min-width:992px) {
+    .main-content {
+        padding: 146px 0!important
+    }
+    #privacy-page-banner,
+    body.has-sub-nav #privacy-page-banner {
+        margin-top: 0
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #privacy-page-banner,
+    #privacy-page-banner .vertical-align {
+        height: 200px
+    }
+}
